@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silliman University Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Top Navigation -->
+    <div class="bg-red-700 text-white py-2 px-4 flex justify-between items-center text-sm">
+        <div class="flex space-x-4">
+            <a href="#" class="hover:underline">School Calendar</a>
+            <a href="#" class="font-bold hover:underline">GIVE NOW</a>
+            <a href="#" class="hover:underline">Emergency Hotline Numbers</a>
+        </div>
+        <div>
+            <select class="bg-red-600 text-white p-1 rounded cursor-pointer">
+                <option>English</option>
+                <option>Filipino</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="bg-white py-4 flex items-center justify-center space-x-3 shadow-md">
+        <img src="logo.png" alt="Silliman University Logo" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold text-red-700">BIBLE STUDY JCSIA</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-14 items-center">
+                <div class="hidden md:flex space-x-6">
+                    <a href="weekly-bible-study.html" class="hover:bg-red-700 px-3 py-2 rounded transition">HOME</a>
+                    
+                    <!-- Dropdown Menu for About -->
+<div class="relative">
+    <button id="aboutDropdownBtn" class="hover:bg-red-700 px-3 py-2 rounded flex items-center transition">
+        ABOUT ▼
+    </button>
+    <div id="aboutDropdownMenu" class="absolute hidden bg-white text-black w-40 shadow-md mt-2 rounded transition">
+        <a href="story.html" class="block px-4 py-2 hover:bg-gray-200">Our History</a>
+        <a href="ourmission.html" class="block px-4 py-2 hover:bg-gray-200">Our Mission</a>
+        <a href="leadership.html" class="block px-4 py-2 hover:bg-gray-200">Our Pastoral</a>
+        <a href="ourgoals.html" class="block px-4 py-2 hover:bg-gray-200">Our Goals</a>
+        <a href="partners.html" class="block px-4 py-2 hover:bg-gray-200">Our Partnership</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Our Campus</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById("aboutDropdownBtn").addEventListener("click", function () {
+        let menu = document.getElementById("aboutDropdownMenu");
+        menu.classList.toggle("hidden");
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        let button = document.getElementById("aboutDropdownBtn");
+        let menu = document.getElementById("aboutDropdownMenu");
+        if (!button.contains(event.target) && !menu.contains(event.target)) {
+            menu.classList.add("hidden");
+        }
+    });
+</script>
+
+                    
+                   
+
+<div class="relative group">
+    <a href="#" class="hover:bg-red-700 px-3 py-2 rounded transition inline-block">BIBLE STUDY </a>
+    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-40">
+        <a href="#" class="block px-4 py-2 text-black hover:bg-gray-200"></a>
+<a href="ourgallery.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our Gallery </a>
+
+
+    </div>
+</div>
+
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden p-2 focus:outline-none text-white text-2xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white text-black p-4 space-y-2 shadow-lg">
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">HOME</a>
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">ABOUT</a>
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">ACADEMICS</a>
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">SERVICES</a>
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">UPDATES</a>
+            <a href="#" class="block hover:bg-gray-200 px-3 py-2 rounded">CHURCH</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('bible22.jpg');">
+        <h1 class="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg p-4 bg-black bg-opacity-50 rounded-lg">
+            OUR STORY BIBLE STUDY 
+        </h1>
+    </div>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+ <!-- Hero Section -->
+ <section class="text-center py-20">
+    <h1 class="text-4xl font-bold text-gray-800">OUR LEADERSHIP </h1>
+</section>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-10">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Administration Officers </h2>
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
+                <img src="201.jpg" alt="Leonardo Galanza" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="mt-4 text-xl font-semibold text-gray-700">REV. DERRY DOTOSME.</h3>
+                <p class="text-gray-500">MASTER OF  DIVITY IN BIBLICAL STUDIES JCSIA HEAD PASTOR BACHELOR OF THEOLOGY PROFESSOR  </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
+                <img src="203.jpg" alt="William Ebert" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="mt-4 text-xl font-semibold text-gray-700">REV. ROBERTO DOTOSME</h3>
+                <p class="text-gray-500">BACHELOR OF THELOGY PROFFESOR </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center w-80">
+                <img src="202.jpg" alt="Daniel Ebert" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="mt-4 text-xl font-semibold text-gray-700">DR.LUCIO DOTOSME
+                </h3>
+                <p class="text-gray-500">DOCTOR OF THEOLOGY WITH DOCOTOR OF MINISTRY ACADEMIC NCBC</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+
+    <footer class="bg-gray-900 text-white py-10" style="background-image: url('https://source.unsplash.com/1600x900/?church,bible'); background-size: cover; background-position: center;">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+            
+            <!-- Accreditation -->
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <h2 class="font-bold text-lg">ACCREDITATION</h2>
+                <p class="text-sm mt-2">
+                    The Commission on Higher Education (CHED) granted government recognition to the CBS Bachelor of Arts in Theology program with its majors in Biblical Literature, Church Studies, and Christian Education (Government Permit No. 081 Series 2016, effective academic year 2016-2017).
+                </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <h2 class="font-bold text-lg">MISSION</h2>
+                <p class="text-sm mt-2">
+                    To prepare students for the spread of the gospel and the building up of local churches in the Philippines and throughout the world.
+                </p>
+                <p class="text-sm mt-2">Follow us on Social Media:</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-4 text-orange-500">
+                    <a href="#" class="hover:text-orange-600"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-orange-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-orange-600"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-orange-600"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <h2 class="font-bold text-lg">CONTACT US</h2>
+                <p class="text-sm mt-2">123 Bible Street, City, Country</p>
+                <p class="text-sm">Email: info@cbs.edu.ph</p>
+                <p class="text-sm">Phone: +63 123 456 7890</p>
+            </div>
+
+        </div>
+        <p class="text-sm mt-6 text-center text-white">© 2025 Center for Biblical Studies</p>
+    </footer>
+
+</body>
+</html>
+

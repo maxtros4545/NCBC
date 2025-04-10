@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH CALOOCAN BIBLE COLLEGE </title>
+    <link rel="icon" href="nbc.jpg" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('north.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+
+
+            /* General styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+#history-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Titles */
+h1.title {
+    color: #ffcc00; /* Gold color for titles */
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px;
+}
+
+/* Links */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #history-content {
+        padding: 15px;
+    }
+
+    h1.title {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+p {
+    text-align: center;
+}
+    
+.carousel-inner img {
+    width: 50%;  /* Ensures the image takes the full width */
+
+ 
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="nbc.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">NORTH CALOOCAN BIBLE COLLEGE  </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">BIBLE COLLEGE </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+                            <li><a class="dropdown-item" href="worships.html">STATEMENT OF THE FAITH </a></li>
+                            <li><a class="dropdown-item" href="program.html">PROGRAM </a></li>
+                            <li><a class="dropdown-item" href="Academics.html">ACADEMICS </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                       
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                   
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    
+    
+       
+    </head>
+    <body>
+    
+        <div class="d-flex justify-content-end">
+            <a href="index.html" class="btn btn-primary" id="backToHome">
+                Back to Home
+            </a>
+        </div>
+           
+       
+
+
+
+
+
+        
+            
+        <div class="main">
+                
+            </div>
+        
+            </nav>
+            <div class="container">
+                <div class="about-section">
+        
+        
+            
+           
+            
+            <div class="mt-4" id="history-content">
+        
+            <h1 class="title">NORTH CALOOCAN BIBLE COLLEGE  HISTORY </h1>
+            <p style="color: white;">
+                <strong>NCBC HISTORY:</strong><br><br>
+                North Caloocan Bible College started as JEC (JCSIA Equipping Center), which was designed to train leaders to support the rapid growth of the church. Ptr. Derio and Ptr. Dong were the first teachers of this equipping center. The students were eager to study and later became key figures in JCSIA’s church planting movements.<br><br>
+              
+                As the need arose to formalize the center, the leaders decided to register it with the SEC (Securities and Exchange Commission). Ptra. Estela Cubacob took the lead in the registration process. Since the original name was not accepted, she suggested the name "North Caloocan Bible College," which was approved.<br><br>
+              
+                The college officially began in 2008 at the JCSIA Bankers main church in Caloocan City. Ptr. Derio Dotosme served as the President, Lucio Dotosme as the Academic Dean, Ptra. Estela as the Registrar, and Jovany as the Treasurer. The institution is governed by a Board of Trustees and supported by reliable professors from various seminaries.<br><br>
+              
+                NCBC is affiliated with PHABATS (Philippines Association of Bible Schools and Theological Seminaries) and registered with the BIR (Bureau of Internal Revenue). Now in its 17th year, NCBC has ministered to nearly 1,000 students, offering both face-to-face and online classes to learners from JCSIA churches and the broader Body of Christ—locally and internationally.
+              </p>
+              
+                
+                <h1 class="title"> ACCF TO  JCSIA  </h1>
+                
+                <p style="color: white;">
+                    The church now has a new leader, Ptr. Romeo Anasco, originally from the province of Mindanao. Anasco earned his bachelor's degree in Christian Education at Four Square Bible College. He led the church for 13 years. During his leadership, a movement called "Mighty Men" emerged—this group of young people became pillars of the church in prayer and evangelism. Mighty Men was led by Ptr. Dong Dotosme, the assistant pastor to Ptr. Anasco.<br><br>
+                  
+                    Through this new generation of mighty men, the church of JCSIA experienced tremendous growth. During this time, Ptr. Romeo Anasco, led by the Holy Spirit, decided to change the church’s name from ACCF to JCSIA. This change was prompted by the declining leadership within ACCF. Ptr. Jaren, the leader of ACCF Main, moved to the USA as a missionary. Bong Valdez and Rick Oasin remained as ACCF leaders, while Ptr. Anasco, following the advice of Ptr. Jaren Lapasaran and with the support of the local church elders, changed the name of ACCF Bankers to JCSIA.<br><br>
+                  
+                    After 13 years of faithful leadership, Ptr. Romeo Anasco handed over the leadership of JCSIA to Ptr. Derio Dotosme, who had served as his assistant. This transition was made with the guidance and support of the Southern Tagalog District Council of the Assemblies of God (STDC AG).
+                  </p>
+                  
+            </div>
+            
+            <h1 class="title">CHURCH EXPANSIONS</h1>
+            <p style="color: white;">
+                Lucio "Dong" Dotosme, the first assistant pastor of Ptr. Romeo Anasco, was led by the Holy Spirit to plant churches in Bulacan, particularly in the City of San Jose Del Monte. He began the mission in Barangay Tungko, the city’s business hub. Through his leadership, Ptr. Dong was able to train many capable leaders such as Ptr. Vic Dedasi, Edgar Tanguna, Yoly Canana and Herman Canan, Robert Dotosme, Edmar Balondo, and many others.<br><br>
+              
+                From this foundation, the church in Tungko went on to plant six more churches in nearby barangays. The mother church also planted three additional churches in nearby areas under the leadership of Ptr. Derio. Ptr. Robert Dotosme went on to plant 12 churches extending from San Jose City to Santa Maria, Bulacan, and even into Pampanga.<br><br>
+              
+                Other members of the Mighty Men movement became global missionaries. Ptr. Antonio Dotosme planted a church in North Korea, Wally Padero in Dubai, Liway Poche in Bahrain, and Juben Mendiola in Saudi Arabia. Leovic Ramos and Edo Francisco both established ministries in Leyte, while Bong Sobremonte also planted a church in Dubai. Joey Calumba is now serving as a missionary in Scotland.<br><br>
+              
+                Today, the JCSIA churches have grown to a total of 31, with locations in Cubao, Quezon City, Caloocan City, San Jose Del Monte, Santa Maria, Pampanga, and various parts of the world.
+              </p>
+              
+        
+        
+           
+            
+            
+           
+            <body class="bg-light">
+                <header class="bg-success text-white text-center py-4">
+                    <h1>Types of Church Planting</h1>
+                    <p>By Lucio Dotosme</p>
+                </header>
+            
+                <div class="container my-4 p-4 bg-white rounded shadow">
+                    <h2>Church Planting Methods</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Mother-Daughter Church Planting:</strong> The mother church builds a daughter church to reproduce herself this church planting is typical to huge congregations and small ones. They usually pulled all the resources to create new church. </li>
+                <li class="list-group-item"><strong>Contact Person Church Planting:</strong> This church planting style is unique and effective because the church planter or the sending church will have no problem for creating new ideas on how to win people in the community because the contact person is the one who will invite people in the said areas for them to attend in the church. The only thing to consider is that the integrity and the maturity of the contact person involved. </li>
+                <li class="list-group-item"><strong>Bible Study Church Planting:</strong> This church planting method is widely used in the Philippines and even overseas and is a model of Nucleus church planting. This is effective for it starts in the small group of people that are gathering together and then enlarges beyond measures. </li>
+                
+                
+                
+                <li class="list-group-item"><strong>One-Man Band Church Planting:</strong> This church planting is difficult but enjoying, for he is alone going to community or places seeking person to be discipled and mentored, then duplicates himself, makes a followers and starts a church. This model was done by Jesus Christ and John the beloved, also the unknown one who planted the church in Rome. </li>
+            
+            
+                <li class="list-group-item"><strong>Church Planting by Division:</strong> This type of church planting is painful and heart breaking, for it happens because of rebellion, selfishness, disunity, personal ambition, or even immorality. The church experienced tremendous problems and then the leadership headed by the opposition formed another church just nearby the mother church or even in a little distance for the purpose of bringing the existing members to the newly formed church</li>
+                
+                <li class="list-group-item"><strong>Mall Church Planting:</strong> This church planting strategy is formed to target mall goers, the people who are coming in this church are from different places. The good thing is that people who are not church goers but mall goers are captured in this newly formed church. But the sad thing believers from other church who are stumbled from their mother church and the one who is unwilling to undergo disciplinary action are easily jumping in this mall church, and the worst scenario is that usually the mall church is engulfing the little churches around the areas. The mall church is renting various places in the mall such as fast food restaurants, cinemas, and function rooms etc.</li>
+                <li class="list-group-item"><strong>House Church Planting:</strong> The house church planting is modeled by the early church this is mentioned in the book of Acts. This type of church planting is effective because people around the area can easily go to church without expending money, time, and distance. The only thing that need to be seen is that the testimony of each believer for people around the community can easily detect the unbecoming character of the believers around. </li>
+                <li class="list-group-item"><strong>Cell Church Planting:</strong> – The cell church planting is formed by group of people who are gathering from their cell groupings, this type of church planting usually emerges from the existing system like G12, C4, AG7, T4T etc. The people involved are forming from cell grouping to newly formed church. Usually they are break away from the above mentioned church growth system. </li>
+            
+            
+            
+            
+                <li class="list-group-item"><strong>Urban Church Planting:</strong> The focus of this church planting is city people. The church leaders are designing strategy to plant church in the market places, reaching the different kinds of people, the office workers, factory workers, the business people in the city. The only thing to consider is budget knowing that the place is expensive. The best thing to do city church planting is to get supporters and sponsors to cater the monetary need of the church. </li>
+            
+            
+            
+                <li class="list-group-item"><strong>Rural Church Planting:</strong> This church planting is enjoying but sometimes lonely because people in the rural areas are busy doing their course in the field, they are scattered and distant to one another for about kilometers away. If the church planter is alone doing bible study and follow-up and is not used to do so he will end up struggling. But the good thing in the rural areas people are undisturbed by different kinds of doctrines seen in the city, if these people are discipled by the teaching of Jesus they can become a good supporter to the pastor assigned.</li>
+                <li class="list-group-item"><strong>Ethnic/Tribal Group Church Planting:</strong> This church planting is focusing on people where church is not familiar to them what they used to be is to talk to the unfamiliar spirits, and witch craft practices, or even cannibalism. These people usually worship the unknown God and sometimes idolatrous for they worship nature and other celestial beings. The difficult thing in tribal church planting is that people have their own tribal local dialects and languages. Therefore the best way to do it is to stay in the area and study their culture and languages then start a church for them. </li>
+            
+            
+                <li class="list-group-item"><strong>Underground Church Planting:</strong> this church planting strategy is done by the church planters in countries where the gospel is strongly prohibited. The church believers are gathering secretly in many areas like rooms, basements, wilderness, inside the forests, or caves where the government officials and soldiers are absent. This happens in Muslim world and iron curtain countries like china, North Korea, some parts of Africa, and before Russia.</li>
+                <li class="list-group-item"><strong>Transient Church Planting:</strong> This church planting happens to areas where people are transient like bus, ships, airplane, train or even club and bars church planting. </li>
+            
+            
+                <li class="list-group-item"><strong>OFW Church Planting:</strong> This is done by believers working abroad that they have formed a fellowship or church where they can gather together to worship God. The pastor usually is a tent-maker or working or in most cases having a missionary Visa. The very target is “Pinoy Abroad.” Usually OFW’s church planting rarely converted local individuals.</li>
+            
+            
+            
+                <li class="list-group-item"><strong>Elite Group Church Planting:</strong> The focus of this church planting is to people who are rich; taipan and oligarchs, this happens in the history of the church that Roman Catholic had closed their ministry to the poor but only those who are kings and rich and educated people. They did not translate the Bible into English lest it will be read by proletariat or common people in the community. </li>
+                <li class="list-group-item"><strong>Local Church-Member Church Planting:</strong> This is bringing the church to the community, the Pastor gathers some of his members to place where they can start a new church that is nearer to their own residence. The sending church assigned a Pastor, leaders, and tithers so that the new planted church can start strong and steady. Although sacrifice on the part of the mother church in terms of quantity and monetary.  </li>
+            
+            
+            
+            
+                <li class="list-group-item"><strong>Modern Technology & Social Media Church Planting:</strong> This happens in first world countries that people are not attending traditional church but just watching the Pastor preaching in YouTube, face book, television, skype, or even screen satellite, the Pastor of this social media church has to make a system on how to support his ministries such as giving donation through ATM, bank transfer support and other technological means. Others are church unseen planting like conference group on cellphones, chats and skypes this happens in our JCSIA Church in Bahrain.  </li>
+                <li class="list-group-item"><strong>Youth and Children Church Planting:</strong> This church planting is focusing only on the next generation like youth and children. This happen to Dwight L. Moody and the Mega church now in Malaysia where the church planter is concentrating to young people. The good news is that the response of the young generation is awesome. The church has produced young teen preachers. And amazingly evangelizing their own generation..</li>
+                <li class="list-group-item"><strong>Group or Merging Church Planting:</strong> The group of people who usually merging from different church or denomination are in unity to form new church and all of their efforts are given to build a church in the place where they have chosen. This happens like SOS (Summer of Service) of Ptr. Rey Calusay in Roxas City. .</li>
+                
+                
+                <li class="list-group-item"><strong>Building-First Church Planting:</strong> This style of church planting is very different because the supporters are gathering all their financial blessings to build a new church first, long before the members come. The church building has to be there empty waiting for the church planter to come and evangelize the community. This style is practiced usually to Methodist church.</li>
+            
+                <li class="list-group-item"><strong>House-to-House Church Planting:</strong> This type of church planting was done by Paul during his missionary journeys in the book of Acts that he went through out the European world doing house to house and planting churches after he gathers all the believers. </li>
+            
+            
+            
+            
+            
+                <li class="list-group-item"><strong>Family Church Planting:</strong> The family is forming a church for the reason of independence, the Father who is a pastor of the family doing his job as a shepherd and then extending his ministry to the relatives, friends and others. This happens if the Christian family migrated to other land where the churches are no longer existing or in most cases he cannot adopt the existing traditional church or denomination in his place.</li>
+               
+                <li class="list-group-item"><strong>Campus Church Planting:</strong> This is done in Campus where students are always present daily. The church has designed campus ministry to start new believers in the universities and colleges. Jesus is Lord Church started in this way and other denominations. Assembly of God Philippines has Chai-Alpha in many Universities including UP.</li>
+                
+                <li class="list-group-item"><strong>Transport Church Planting:</strong> This type of church planting is done in transportation where people are always busy everyday of which they have no time to go to church, therefore the leaders are designing a church that would cater the spiritual needs of the people. For instance live and video presentation of the Gospels are ushered to the people in flight and in land travel. Also wedding, child dedication and baptism of water and other ceremonies are done in this type of transport church planting. </li>
+                
+                <li class="list-group-item"><strong>People in Uniform Church Planting:</strong> This is primarily focusing on military people where they are being reached by the gospel through bringing the church to their military camps. The chaplain is there to share the good news of Jesus Christ, the best example to it is Billy Braham that he shares the gospel to the military at war in Vietnam</li>
+                
+                <li class="list-group-item"><strong>City Jail Church Planting:</strong> The church is planted in the place where people have no freedom to go outside world. They are confined in Prison for life, therefore the church must be planted in this place so that the spirituality of the inmates would be met. Inside Muntinlupa prison colony have churches depending upon the religion of the people. But for us Christian our church’s presence is important because it brings hope and salvation to the lost humanity. </li>
+               
+                
+                
+                <li class="list-group-item"><strong>Hospital Church Planting:</strong> Churches planted in medical facilities.</li>
+            
+                
+                <li class="list-group-item"><strong>Deaf and Blind Church Planting:</strong> There are hospitals that the patients are not allowed to go out and roam for their cases are different from what is normal like Tala Hospital Leprosarium, the leprous people are hopeless they are not allowed to go out of the said hospital not unless that they are completely healed. Therefore the church must be brought in that area so that the said people can hear the gospel and be saved.</li>
+                
+                <li class="list-group-item"><strong>Colonizing Church Planting:</strong> This type of church planting is difficult and hard for you are pastoring to special people but then for God nothing is impossible one of the ministries of the AG Philippines in Valenzuela is ministering to the deaf children and adults, School for children and Church for the adults. On the other hand Manila blind church is now growing where its ministry is shepherding to the blind people and bringing them to their local church.</li>
+                
+                <li class="list-group-item"><strong>Dead Church Planting:</strong> The dead church or dying church is dissolved in order to build new one, it is like a dead fruit having seed, buried in the ground and then sprout again. This is difficult because even Rick Warren admitted that he said, “It is easy to give birth rather than to raise the dead” (Purpose driven church). Usually radical change of leadership is necessary or new system even followed. </li>
+                    </ul>
+
+
+
+                    <h1 class="title">JCSIA’s Church Government</h1>
+                    <p style="color: black;">
+                        JCSIA follows a Presbyterian leadership pattern with elements of Congregational and Episcopalian systems... 
+                        <br><br>
+                        <strong>Church Growth Strategy:</strong> JCSIA follows the Nucleus strategy... 
+                        <br><br>
+                        <strong>Location of JCSIA Main Church and Office:</strong> JCSIA’s main church and office are in Bankers Village 2.
+                      </p>
+                      
+            
+                
+           
+           <script>
+                
+            </script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+        
+    
+       </div>
+
+
+       
+       
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Olivet University Footer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .footer h6 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #ccc;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .social-icons i {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #fff;
+    }
+    .footer input.form-control {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="logo mb-2">
+          <img src="nbc.jpg" alt="Olivet University Logo" class="rounded-circle mb-2" width="80">
+        </div>
+        <address>
+          36401 Tripp Flats Rd.<br>
+          Anza, CA 92539<br>
+          Tel. 951.763.0500
+        </address>
+        <div class="social-icons mt-2">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="mt-2">&copy; 2025 Olivet University. All Rights Reserved.</div>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ABOUT</h6>
+        <a href="#">Welcome</a>
+        <a href="#">History</a>
+        <a href="#">Founder</a>
+        <a href="#">Mission</a>
+        <a href="#">Memberships</a>
+       
+       
+      </div>
+
+      <div class="col-md-2">
+        <h6>PASTORAL </h6>
+        <a href="derrydotosme.html">REV. DERRY DOTOSME </a>
+        <a href="#">Olivet's Core Learning Outcomes</a>
+        <a href="#">Academic Standards</a>
+        <a href="#">Research & Development</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>PROGRAM BY LOCATIONS</h6>
+        <a href="#">Riverside</a>
+        <a href="#">San Francisco</a>
+        <a href="#">St. Louis</a>
+        <a href="#">Washington D.C.</a>
+        <a href="#">Sanford</a>
+        <a href="#">Nashville</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ADMISSION & AID</h6>
+        <a href="#">Undergraduate Programs</a>
+        <a href="#">Graduate Programs</a>
+        <a href="#">International Students</a>
+        <a href="#">Financial Information</a>
+        <a href="#">Continuing Education</a>
+        <a href="#">Consumer Information</a>
+      </div>
+
+     
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

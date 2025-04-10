@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('10.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="StatementOfFaith.html">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="Local.html">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="Child.html">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="youth.html">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="Single.html">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Holy Scriptures</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+           
+            .header-title {
+                text-align: center;
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .language-btn {
+                display: block;
+                margin: 0 auto 15px;
+            }
+            .social-icons {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .social-icons a {
+                color: #007bff;
+                font-size: 20px;
+                margin: 0 10px;
+                transition: color 0.3s;
+            }
+            .social-icons a:hover {
+                color: #0056b3;
+            }
+            .content {
+                text-align: justify;
+                max-width: 800px;
+                margin: auto;
+            }
+            .scripture-image {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 15px auto;
+            }
+            p {
+      color: white;
+    }
+    
+    h2{
+    
+        color: white;
+    
+    }
+    
+    
+    .scripture-image {
+        width: 100%;  /* Adjust width as needed */
+        max-width: 600px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-title a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .card-title a:hover {
+        color: #007bff;
+    }
+    
+    .card-img-top {
+        width: 150px; /* Set desired width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .box {
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.version {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+
+
+.scripture-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.version {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+
+
+.version {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+    color: rgba(255, 255, 255, 0.85); /* Increases text opacity for better readability */
+    padding: 15px; 
+    text-align: center;
+    border-radius: 8px; 
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.version:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            
+            <h2 class="header-title">The Final Judgment </h2>
+    
+          
+    
+            
+    
+            <img src="holy.jpg" alt="The Holy Scriptures" class="scripture-image">
+    
+            <div class="content">
+               
+                
+    
+       </div>
+   
+    
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Church Life Groups</title>
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+           <script>
+               function showContent() {
+                   let topic = document.getElementById("topicSelect").value.trim().toLowerCase();
+                   let contentDiv = document.getElementById("content");
+       
+                   let lifeGroups = {
+                       "faith builders life group": "1 Corinthians 3:10-11 - <a href='https://www.bible.com/bible/1/1CO.3.10-11.KJV' target='_blank'>View Verse</a>",
+                       "grace seekers fellowship": "Ephesians 2:8-9 - <a href='https://www.bible.com/bible/1/EPH.2.8-9.KJV' target='_blank'>View Verse</a>",
+                       "kingdom disciples life group": "Matthew 6:33 - <a href='https://www.bible.com/bible/1/MAT.6.33.KJV' target='_blank'>View Verse</a>",
+                       "renewed hearts community": "Romans 12:2 - <a href='https://www.bible.com/bible/1/ROM.12.2.KJV' target='_blank'>View Verse</a>",
+                       "living waters fellowship": "John 7:38 - <a href='https://www.bible.com/bible/1/JHN.7.38.KJV' target='_blank'>View Verse</a>",
+                       "hope anchors life group": "Hebrews 6:19 - <a href='https://www.bible.com/bible/1/HEB.6.19.KJV' target='_blank'>View Verse</a>",
+                       "joyful discipleship group": "Philippians 4:4 - <a href='https://www.bible.com/bible/1/PHP.4.4.KJV' target='_blank'>View Verse</a>",
+                       "light bearers ministry": "Matthew 5:14 - <a href='https://www.bible.com/bible/1/MAT.5.14.KJV' target='_blank'>View Verse</a>",
+                       "spirit-led walkers": "Galatians 5:25 - <a href='https://www.bible.com/bible/1/GAL.5.25.KJV' target='_blank'>View Verse</a>",
+                       "covenant keepers fellowship": "Psalm 25:10 - <a href='https://www.bible.com/bible/1/PSA.25.10.KJV' target='_blank'>View Verse</a>",
+                       "prayer warriors circle": "1 Thessalonians 5:16-18 - <a href='https://www.bible.com/bible/1/1TH.5.16-18.KJV' target='_blank'>View Verse</a>",
+                       "abundant life discipleship": "John 10:10 - <a href='https://www.bible.com/bible/1/JHN.10.10.KJV' target='_blank'>View Verse</a>",
+                       "the vine connection": "John 15:5 - <a href='https://www.bible.com/bible/1/JHN.15.5.KJV' target='_blank'>View Verse</a>",
+                       "salt & light life group": "Matthew 5:13-16 - <a href='https://www.bible.com/bible/1/MAT.5.13-16.KJV' target='_blank'>View Verse</a>",
+                       "fellowship of believers": "Acts 2:42 - <a href='https://www.bible.com/bible/1/ACT.2.42.KJV' target='_blank'>View Verse</a>",
+                       "harvest disciples community": "Matthew 9:37-38 - <a href='https://www.bible.com/bible/1/MAT.9.37-38.KJV' target='_blank'>View Verse</a>",
+                       "the good shepherd's flock": "John 10:11 - <a href='https://www.bible.com/bible/1/JHN.10.11.KJV' target='_blank'>View Verse</a>",
+                       "agape love fellowship": "1 John 4:7-8 - <a href='https://www.bible.com/bible/1/1JN.4.7-8.KJV' target='_blank'>View Verse</a>",
+                       "mission-driven discipleship": "Matthew 28:19-20 - <a href='https://www.bible.com/bible/1/MAT.28.19-20.KJV' target='_blank'>View Verse</a>",
+                       "christ-centered warriors": "2 Timothy 2:3 - <a href='https://www.bible.com/bible/1/2TI.2.3.KJV' target='_blank'>View Verse</a>"
+                   };
+       
+                   if (topic in lifeGroups) {
+                       contentDiv.innerHTML = `
+                           <h4 class="text-success">${topic.replace(/\b\w/g, c => c.toUpperCase())}</h4>
+                           <p>Welcome to the <strong>${topic.replace(/\b\w/g, c => c.toUpperCase())}</strong>! Connect, grow, and be part of our community.</p>
+                           <p><strong>Key Verse:</strong> ${lifeGroups[topic]}</p>
+                       `;
+                   } else {
+                       contentDiv.innerHTML = `<em class='text-muted'>Please select a valid Life Group.</em>`;
+                   }
+               }
+           </script>
+       </head>
+       <body>
+           <div class="container">
+               <h2 class="mt-4 text-center">Church Life Groups</h2>
+               <p class="text-center">Join a Life Group and grow in faith together!</p>
+       
+               <div class="mb-3">
+                   <label for="topicSelect" class="form-label">Choose a Life Group:</label>
+                   <select id="topicSelect" class="form-select">
+                       <option value="">Select a Life Group</option>
+                       <option value="faith builders life group">Faith Builders Life Group</option>
+                       <option value="grace seekers fellowship">Grace Seekers Fellowship</option>
+                       <option value="kingdom disciples life group">Kingdom Disciples Life Group</option>
+                       <option value="renewed hearts community">Renewed Hearts Community</option>
+                       <option value="living waters fellowship">Living Waters Fellowship</option>
+                       <option value="hope anchors life group">Hope Anchors Life Group</option>
+                       <option value="joyful discipleship group">Joyful Discipleship Group</option>
+                       <option value="light bearers ministry">Light Bearers Ministry</option>
+                       <option value="spirit-led walkers">Spirit-Led Walkers</option>
+                       <option value="covenant keepers fellowship">Covenant Keepers Fellowship</option>
+                       <option value="prayer warriors circle">Prayer Warriors Circle</option>
+                       <option value="abundant life discipleship">Abundant Life Discipleship</option>
+                       <option value="the vine connection">The Vine Connection</option>
+                       <option value="salt & light life group">Salt & Light Life Group</option>
+                       <option value="fellowship of believers">Fellowship of Believers</option>
+                       <option value="harvest disciples community">Harvest Disciples Community</option>
+                       <option value="the good shepherd's flock">The Good Shepherd's Flock</option>
+                       <option value="agape love fellowship">Agape Love Fellowship</option>
+                       <option value="mission-driven discipleship">Mission-Driven Discipleship</option>
+                       <option value="christ-centered warriors">Christ-Centered Warriors</option>
+                   </select>
+               </div>
+       
+               <button class="btn btn-primary w-100" onclick="showContent()">Show Content</button>
+       
+               <div id="content" class="mt-3 p-3 bg-white border rounded">
+                   <em class="text-muted">Select a Life Group and click the button to display content.</em>
+               </div>
+           </div>
+       </body>
+       </html>
+       
+    
+       </div>
+
+            </div>
+            <footer class="footer text-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Policies</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-title">Get in Touch</h5>
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Phone/Email">
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="2" placeholder="Leave us a message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-center social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

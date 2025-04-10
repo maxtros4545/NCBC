@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH CALOOCAN BIBLE COLLEGE </title>
+    <link rel="icon" href="nbc.jpg" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('Home.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="nbc.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">NORTH CALOOCAN BIBLE COLLEGE 
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">BIBLE COLLEGE </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+                            <li><a class="dropdown-item" href="worships.html">STATEMENT OF THE FAITH </a></li>
+                            <li><a class="dropdown-item" href="program.html">PROGRAM </a></li>
+                            <li><a class="dropdown-item" href="Academics.html">ACADEMICS </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                   
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                  
+                
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    
+    
+    <body>
+        <div class="container text-center my-5">
+            <h2 class="text-warning">OUR PASTORAL TEAM</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <a href="derrydotosme.html">
+                        <img src="derry.jpg" class="img-fluid rounded pastor-image" alt="DERRY DOTOSME">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pastorlucio.html">
+                        <img src="202.jpg" class="img-fluid rounded pastor-image" alt="PASTOR LUCIO">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pastorRobert.html">
+                        <img src="203.jpg" class="img-fluid rounded pastor-image" alt="PASTOR ROBERT">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoral Council</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+.church-heading {
+  color: white;
+  font-size: 20px;
+}
+
+    
+    
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+
+
+        .text-secondary {
+    color: white !important;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="text-primary" style="color: white;">PASTORAL COUNCIL</h2>
+            <p style="color: white;"><strong>Local Church</strong> - Head Pastors</p>
+            <p style="color: white;"><strong>Rev. Derio Dotosme</strong> - Overall Head and Spiritual Adviser</p>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Doc. Lucio Dotosme - Bankers</li>
+                    <li class="list-group-item">Rev. Roberto Dotosme - GACMI Unified</li>
+                    <li class="list-group-item">Rev. Victor Dedasi - Tungko</li>
+                    <li class="list-group-item">Ptr. Jovany Sambrano - Pleasant</li>
+                    <li class="list-group-item">Ptr. Lawrence Pagador - Cubao</li>
+                    <li class="list-group-item">Ptr. Polly Vargas - Amparo</li>
+                    <li class="list-group-item">Ptr. Jonathan Donald Racha - Towerville</li>
+                    <li class="list-group-item">Ptr. Edmar Jade Balondo - Pechayan</li>
+                    <li class="list-group-item">Ptr. Cris Perez - Benjamin</li>
+                    <li class="list-group-item">Ptra. Marita Tayanguna - Pabahay</li>
+                    <li class="list-group-item">Ptra. Menchu Genese -Kaybanban</li>
+                    <li class="list-group-item">Ptra. Ellen Sayson - Palmera</li>
+                    <li class="list-group-item">Ptra. Rosalie Roga - Feliciano</li>
+                    <li class="list-group-item">Ptra. Juanita Sta Maria - Sta Maria (Tuamana)</li>
+                    <li class="list-group-item">Ptra. Luningning Dela Cruz - Vista Verde</li>
+                    <li class="list-group-item">Ptra. Eduardo Ibanez - Gumaoc </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Ptr. Remi Rubi - Graceville</li>
+                    <li class="list-group-item">Ptr. Jose Germani Camaña - Toyota/Gaya-Gaya</li>
+                    <li class="list-group-item">Ptr. Alfredo Lumor - Marilao</li>
+                    <li class="list-group-item">Ptr. Nido Dotosme - Parada</li>
+                    <li class="list-group-item">Ptr. Charlie Tuazon - Pakswanan</li>
+                    <li class="list-group-item">Ptr. Mark Anthony Catucod - Ciudad Real</li>
+                    <li class="list-group-item">Ptr. Santy Quitay - Olongapo</li>
+                    <li class="list-group-item">Ptr. Cecilia Bautista - San Mateo</li>
+                    <li class="list-group-item">Ptr. Reynaldo Santiago - San Ildefonso</li>
+                    <li class="list-group-item">Ptr. Edwin Malanao - Pampanga</li>
+                    <li class="list-group-item">Ptra. Edwin Malanao - Pampanga</li>
+                    <li class="list-group-item">Ptra.Anabelle Leonen  - Sapang Palay </li>
+                    <li class="list-group-item">Ptra.Anabelle Leonen  - Sapang Palay </li>
+                    <li class="list-group-item">Ptr.Antonio Dotosme  - HACAI Korea </li>
+                   <li class="list-group-item">Ptra.Teresita Tan   - Tapai, Taiwan </li>
+                   <li class="list-group-item">Ptra.Bonita Yoshida   - Tokyo Japan </li>
+                   <li class="list-group-item">Ptr.Angel Reyes  - SGCF </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 mb-4">
+            <h2 class="text-primary text-white">Local Church Assistant / Associate Pastors</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Bro. Paul Jeremiah Galo Ursos - JCSIA Bankers</li>
+                    <li class="list-group-item">Ptr. Roberto Banawa - JCSIA Bankers</li>
+                    <li class="list-group-item">Ptr. Jun Que - JCSIA Bankers</li>
+                    <li class="list-group-item">Ptr. Marlon Maxilom - JCSIA Bankers</li>
+                    <li class="list-group-item">Ptr. Justino Dagamac Jr. - JCSIA Cubao</li>
+                    <li class="list-group-item">Ptra. Ella Arevalo - JCSIA Pleasant</li>
+                    <li class="list-group-item">Ptr. Ralph Jusay - JCSIA Bankers</li>
+                    <li class="list-group-item">Ptr. Mario Robles - JCSIA Cubao</li>
+                    <li class="list-group-item">Ptra. Thelma Dagamac - JCSIA Cubao</li>
+                    <li class="list-group-item">Ptra. Marilyn Robles - JCSIA Cubao</li>
+                    <li class="list-group-item">Ptr. Ricky Evardone - JCSIA Amparo</li>
+                    <li class="list-group-item">Ptra. Virginia Iquio - JCSIA Tungko</li>
+                    <li class="list-group-item">Ptr. Jimwell Marcelo - JCSIA Tungko</li>
+                    <li class="list-group-item">Ptr. Dem Warren Racha - JCSIA Tungko</li>
+                    <li class="list-group-item">Ptra. Helen Dedasi - JCSIA Tungko</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Ptra. Wilma Tabuzo - JCSIA Tungko</li>
+                    <li class="list-group-item">Ptra. Evelyn Racha - JCSIA Tungko</li>
+                    <li class="list-group-item">Ptra. Estrellita Cubacub - JCSIA Gacmi</li>
+                    <li class="list-group-item">Ptr. Angelito Mallari - JCSIA Gacmi</li>
+                    <li class="list-group-item">Ptra. Cyren Tuazon - JCSIA Pakwan</li>
+                    <li class="list-group-item">Ptr. Tomi Amenin - JCSIA Sta. Maria</li>
+                    <li class="list-group-item">Ptr. Edgar Tayaguna - JCSIA Pabahay</li>
+                    <li class="list-group-item">Ptra. Maritess Montesa - JCSIA Tumana</li>
+                    <li class="list-group-item">Ptr. Jayvee Viologo - JCSIA San Ildefonso</li>
+                    <li class="list-group-item">Ptr. Racquel Salut - JCSIA Pabahay</li>
+                    <li class="list-group-item">Ptra. Medelyn Reyes - JCSIA Pampanga</li>
+                    <li class="list-group-item">Ptr. Aquino Dela Cruz - JCSIA Feliciano</li>
+                    <li class="list-group-item">Ptr. Jojo Namuo - JCSIA Vista Verde</li>
+                    <li class="list-group-item">Ptr. Pol Leonén - JCSIA Sapangpalay</li>
+                    <li class="list-group-item">Ptr. Raey Timario - JCSIA Graceville</li>
+                    <li class="list-group-item">Ptr. Ernesto Vallejos - JCSIA Gumaok</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+   
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoral Council</title> 
+    
+    
+    <style>
+         
+        
+        .header-text {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .sub-header {
+            color: #6c757d;
+            font-style: italic;
+        }
+        .list-group-item {
+            background-color: #f1f1f1;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .list-group-item:hover {
+            background-color: #e2e6ea;
+        }
+
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-header h2 {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .section-header h4 {
+            color: #6c757d;
+        }
+        .list-group-item {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .center-text {
+    text-align: center;
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="text-primary text-white">ONE JCSIA HEAD</h2>
+            <h4 class="text-secondary text-white">REV. DERIO A. DOTOSME</h4>
+            <h4 class="text-secondary text-white">BOARD OF TRUSTEES</h4>
+            
+           
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">REV. DERIO A. DOTOSME</li>
+                    <li class="list-group-item">PTRA. ESTRELLITA CUBACUB</li>
+                    <li class="list-group-item">PTRA. EVELYN Y. RACHA</li>
+                    <li class="list-group-item">DR. LUCIO A.DOTOSME</li>
+                    <li class="list-group-item">PTR. ROBERTO P. BANAWA</li>
+                    <li class="list-group-item">PTR. EDGAR A. TAYANGUA</li>
+                    <li class="list-group-item">PTRA. HELEN V. DEDASI</li>
+                    <li class="list-group-item">PTRA. WILMA T. TABUZO</li>
+                    <li class="list-group-item">BRO. PETE L. MAGUAD</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <h4 class="text-secondary text-center text-white">BOARD OF TRUSTEES
+
+
+
+                    <li class="list-group-item">REV. DERIO A. DOTOSME</li>
+                    <li class="list-group-item">DRs. LUCIO A.DOTOSMEE</li>
+                    <li class="list-group-item">REV. ROBERTO A. DOTOSME</li>
+                    <li class="list-group-item">REV. VICTOR DEDASI</li>
+                    <li class="list-group-item">PTR. POLLY VARGAS</li>
+                    <li class="list-group-item">PTR. EDMAR JADE BALONDO</li>
+                    <li class="list-group-item">PTR. JOVANY SAMBRAO</li>
+                    <li class="list-group-item">PTR. ROBERTO P. BANAWA</li>
+                    <li class="list-group-item">PTRA. HELEN V. DEDASI</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <h4 class="text-secondary text-center text-white">NATIONAL SECRETARY
+
+                    <li class="list-group-item">PTR. EDMAR JADE BALONDO</li>
+                    <li class="list-group-item">NATIONAL ADMINISTRATOR</li>
+                    <li class="list-group-item">PTR. EDGAR A. TAYANGUA</li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <h4 class="text-secondary text-center text-white">CHURCH ZONE'S
+                    <li class="list-group-item">ZONES 1- PTR. POLLY VARGAS</li>
+                    <li class="list-group-item">ZONES 1- PTR. POLLY VARGAS</li>
+                    <li class="list-group-item">ZONES 3- REV. ROBERTO A. DOTOSME</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 mb-4">
+            <h4 class="text-secondary text-center text-white">NATIONAL DEPARTMENTS
+            </h4>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">FINACE - PTRA. HELEN V. DEDASI</li>
+                    <li class="list-group-item">CHURCH PLANING/MISSION - REV. ROBERTO A. DOTOSME</li>
+                    <li class="list-group-item">MUSIC - PTR DEM WARREN RACHA</li>
+                    <li class="list-group-item">Ptr. Marlon Maxilom - JCSIA Bankers</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <h4 class="text-secondary text-center text-white">NATIONAL MINISTRIES</h4>
+
+                    <li class="list-group-item">THEOLOGICAL FORUM - REV. DERIO A. DOTOSME</li>
+                    <li class="list-group-item">SIMBAYANIHAN - PTR. ROBERTO P. BANAWA</li>
+                    <li class="list-group-item">CARE GROUP:</li>
+                    <li class="list-group-item">.MEN - PTR. ANGELITO MALLARI</li>
+                    <li class="list-group-item">  .WOMEN - SIS. LIZA DOTOSME</li>
+                    <li class="list-group-item">YOUTH&SINGLES - PTR. PAUL JEREMIAH GALO URSOS</li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <h4 class="text-secondary text-center text-white">NORTH CALOOCAN BIBLE COLLEGE</h4>
+
+                    <li class="list-group-item">REV. DERIO A. DOTOSME</li>
+                    <li class="list-group-item">DR.LUCIO A.DOTOSME</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    
+                </ul>
+
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE JCSIA Organizational Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: black;
+            margin: auto;
+        }
+        .branch {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <h4 class="text-secondary text-center text-white">ONE JCSIA ORGANIZATIONAL CHART</h4>
+
+
+    <div class="chart">
+        <div class="box">ONE JCSIA HEAD</div>
+        <div class="line"></div>
+
+        <div class="branch">
+            <div class="box">BOARD OF TRUSTEES</div>
+            <div class="box">PASTORAL COUNCIL</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="box">ONE JCSIA EXECOM</div>
+        <div class="line"></div>
+
+        <div class="branch">
+            <div class="box">NATIONAL SECRETARY</div>
+            <div class="box">NATIONAL ADMINISTRATOR</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">CHURCH ZONES</div>
+            <div class="box">NATIONAL DEPARTMENTS</div>
+            <div class="box">NATIONAL MINISTRIES</div>
+            <div class="box">NORTH CALOOCAN BIBLE COLLEGE</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">ZONE 1</div>
+            <div class="box">ZONE 2</div>
+            <div class="box">ZONE 3</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">FINANCE</div>
+            <div class="box">CHURCH PLANTING/MISSION</div>
+            <div class="box">THEOLOGICAL FORUM</div>
+            <div class="box">MAIN CAMPUS</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">MUSIC</div>
+            <div class="box">SIMBAYANIHAN</div>
+            <div class="box">EXTENSIONS</div>
+            <div class="box">SCHOLARSHIPS</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="box">CARE GROUP</div>
+
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">MEN</div>
+            <div class="box">WOMEN</div>
+            <div class="box">YOUTH & SINGLES</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Olivet University Footer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .footer h6 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #ccc;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .social-icons i {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #fff;
+    }
+    .footer input.form-control {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="logo mb-2">
+          <img src="nbc.jpg" alt="Olivet University Logo" class="rounded-circle mb-2" width="80">
+        </div>
+        <address>
+          36401 Tripp Flats Rd.<br>
+          Anza, CA 92539<br>
+          Tel. 951.763.0500
+        </address>
+        <div class="social-icons mt-2">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="mt-2">&copy; 2025 Olivet University. All Rights Reserved.</div>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ABOUT</h6>
+        <a href="#">Welcome</a>
+        <a href="#">History</a>
+        <a href="#">Founder</a>
+        <a href="#">Mission</a>
+        <a href="#">Memberships</a>
+       
+       
+      </div>
+
+      <div class="col-md-2">
+        <h6>PASTORAL </h6>
+        <a href="derrydotosme.html">REV. DERRY DOTOSME </a>
+        <a href="#">Olivet's Core Learning Outcomes</a>
+        <a href="#">Academic Standards</a>
+        <a href="#">Research & Development</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>PROGRAM BY LOCATIONS</h6>
+        <a href="#">Riverside</a>
+        <a href="#">San Francisco</a>
+        <a href="#">St. Louis</a>
+        <a href="#">Washington D.C.</a>
+        <a href="#">Sanford</a>
+        <a href="#">Nashville</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ADMISSION & AID</h6>
+        <a href="#">Undergraduate Programs</a>
+        <a href="#">Graduate Programs</a>
+        <a href="#">International Students</a>
+        <a href="#">Financial Information</a>
+        <a href="#">Continuing Education</a>
+        <a href="#">Consumer Information</a>
+      </div>
+
+     
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

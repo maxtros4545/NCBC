@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('home.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="StatementOfFaith.html">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="Local.html">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="Child.html">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="youth.html">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="Single.html">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCU Marketplace Ministers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f97316;
+            color: #fff;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            color: #000;
+        }
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="fw-bold" style="color: white; text-align: center;">Connecting Campus Ministry with the Church: Building a Strong Foundation for Faith</h2>
+        <p><em style="color: white; text-align: center; display: block;">Connecting campus ministry with the church creates a solid foundation for spiritual growth. By fostering relationships between students and church communities, both can support one another in faith. Campus ministries help students grow spiritually, while the church provides guidance and accountability, ensuring lifelong discipleship and a lasting impact for Christ.</em></p>
+        
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="bible11.jpg" class="img-fluid" alt="Students discussing">
+                    <h4 class="mt-3">The Importance of Fellowship: Growing Together in Christ –</h4>
+                    <p>Fellowship is vital for spiritual growth, as it strengthens relationships with God and fellow believers. In community, we encourage one another, share our burdens, and grow in faith together. Through mutual support and accountability, fellowship fosters a deeper understanding of Christ’s love, making us stronger in our walk with Him.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="bible2.jpeg" class="img-fluid" alt="Students working together">
+                    <h4 class="mt-3">The Power of Prayer in College Life"</h4>
+                    <p>Prayer is a powerful tool in college life, offering comfort, guidance, and strength during stressful times. It connects us with God, providing clarity and peace in the midst of academic challenges. Through prayer, we seek direction, find inner peace, and experience God's presence in every aspect of our journey.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="bible10.jpg" class="img-fluid" alt="Group of students collaborating">
+                    <h4 class="mt-3">Called to Ministry?</h4>
+                    <p>Being called to ministry is a divine invitation to serve others and share God's love. It requires faith, obedience, and a heart willing to serve. Whether through preaching, teaching, or supporting others, ministry is about fulfilling God’s purpose and making a difference in the lives of those around us.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doxa Deo Sections</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .section {
+            padding: 40px;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .name { background: #1d3557; }
+        .dream { background: #e63946; }
+        .strategy { background: #457b9d; }
+        .mission { background: #a8a8a8; color: black; }
+        .highlight { font-weight: bold; color: #ffcc00; }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 section name">
+                <h2><i class="fas fa-book-open"></i> Our Name</h2>
+                <p>Our Campus Ministry is    <span class="highlight">Light of Faith Campus Ministry</span> We are a community of students united in faith, committed to growing spiritually, and spreading God's love. Our name reflects our mission to be a guiding light, leading others to Christ through worship, service, and discipleship..</p>
+            </div>
+            <div class="col-md-6 section dream">
+                <h2><i class="fas fa-cloud"></i> Our Dream</h2>
+                <p>Our dream is to build a faith <span class="highlight">"driven student community where everyone encounters Christ’s love. We envision a campus filled with transformed lives, strong in faith, and committed to serving others. We aspire to be a beacon of hope, where students grow spiritually and share God's love with the world.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 section strategy">
+                <h2><i class="fas fa-chart-line"></i> Our Strategy</h2>
+                <p>We cultivate faith through weekly Bible studies,<span class="highlight">Sunday services. We encourage</span>, service through outreach programs, mentoring, and discipleship <span class="highlight">"We foster unity by organizing retreats, fellowship gatherings, and mission trips. Our strategy is to equip students to live out their faith boldly and impact their campus positively."</span></p>
+            </div>
+            <div class="col-md-6 section mission">
+                <h2><i class="fas fa-heart"></i> Our Mission</h2>
+                <p>Our mission is to lead students <span class="highlight">to Christ </span> strengthen their faith,  <span class="highlight">and empower them to share the Gospel.</span> Through prayer,  <span class="highlight">worship</span> nd service, we seek to create a Christ-centered community that inspires spiritual growth, encourages discipleship, and transforms lives, equipping students to be God’s light on campus and beyond.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beliefs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .belief-box {
+            background: #f8f9fa;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .scripture {
+            color: #ff6600;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">📖</div>
+                    <h3 class="section-title">THE BIBLE</h3>
+                    <p><strong>WE BELIEVE</strong> the Bible is uniquely and fully inspired by the Holy Spirit and is the foundation of all Truth...</p>
+                    <p class="scripture">2 Tim 3:16-17 NKJV...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">🙏</div>
+                    <h3 class="section-title">GOD AS OUR FATHER</h3>
+                    <p><strong>WE BELIEVE</strong> there is One God, the sovereign Creator and Sustainer of all things...</p>
+                    <p class="scripture">2 Cor 6:18 NKJV...</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">❤️</div>
+                    <h3 class="section-title">JESUS CHRIST</h3>
+                    <p><strong>WE BELIEVE</strong> that Jesus Christ is the Son of God...</p>
+                    <p class="scripture">Rom 4:25 NKJV...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">🕊️</div>
+                    <h3 class="section-title">THE HOLY SPIRIT</h3>
+                    <p><strong>WE BELIEVE</strong> that the Holy Spirit has come to glorify and to establish the saving work of Jesus Christ...</p>
+                    <p class="scripture">Acts 1:8 NKJV...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beliefs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .belief-box {
+            background: #f8f9fa;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .scripture {
+            color: #ff6600;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">✝️</div>
+                    <h3 class="section-title">SALVATION</h3>
+                    <p><strong>WE BELIEVE</strong> that salvation is wholly dependent on God's grace through faith...</p>
+                    <p class="scripture">Rom 10:9-10 NKJV...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">⛪</div>
+                    <h3 class="section-title">THE CHURCH</h3>
+                    <p><strong>WE BELIEVE</strong> that through faith in Jesus Christ, all believers are united as the Body of Christ...</p>
+                    <p class="scripture">Eph 1:22-23 NKJV...</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">🌍</div>
+                    <h3 class="section-title">THE KINGDOM OF GOD</h3>
+                    <p><strong>WE BELIEVE</strong> that the entire cosmos can only be understood in relation to God...</p>
+                    <p class="scripture">Col 1:15-17 NKJV...</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="belief-box">
+                    <div class="icon">📢</div>
+                    <h3 class="section-title">PROCLAIMING THE WORD</h3>
+                    <p><strong>WE BELIEVE</strong> that by proclaiming the word of God, truth is revealed...</p>
+                    <p class="scripture">2 Tim 4:1-4 NKJV...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missional Strategy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .mission-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .mission-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e65100;
+        }
+        .mission-text {
+            margin-bottom: 30px;
+        }
+        .card {
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 40px;
+            color: #e65100;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="mission-container">
+        <h1 class="mission-title">We are a Family on Mission!</h1>
+        <p class="mission-text" style="color: white;">
+            Our strategy is to raise up Missional Individuals, Missional Communities, and Missional Eco-systems that will resonate with the heart of Jesus' prayer in Matthew 6:10: 
+            <br><em>"Let Your Kingdom come, Your will be done, here on earth as it is in heaven!"</em>
+        </p>
+        
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="icon">🔹</div>
+                <h4 class="fw-bold">MISSIONAL <br> Individual</h4>
+                <p>Every believer is a City Changer, and our dream is to equip individuals as disciples of Jesus to Know their God, Love people, and Impact their world.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="icon">👥</div>
+                <h4 class="fw-bold">MISSIONAL <br> Community</h4>
+                <p>The church and its ministries are a community of believers who support each other and grow together until we become a movement of City Changers who bring light to our world.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="icon">🔗</div>
+                <h4 class="fw-bold">MISSIONAL <br> Eco-System</h4>
+                <p>We build a network of Kingdom Partners with other life-giving ministries and organizations who can effectively attend to the quality of life in a city!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Family of Ministries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .ministry-card {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .bg-dark-blue { background-color: #002F5F; }
+        .bg-medium-blue { background-color: #005F90; }
+        .bg-light-blue { background-color: #009FC6; }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h2 class="fw-bold text-primary text-white">Beyond the Classroom: Building a Christ-Centered Campus Community</h2>
+
+
+        </h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="ministry-card bg-dark-blue">
+                    <h5 class="mt-3">CITY CHANGERS MOVEMENT</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ministry-card bg-medium-blue">
+                    <h5 class="mt-3">LIFEWORK LEADERSHIP</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ministry-card bg-light-blue">
+                    <h5 class="mt-3">CITY CHANGERS INSTITUTE</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+   
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Involvement</title>
+    <style>
+        
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: rgb(255, 150, 50);
+            font-weight: bold;
+        }
+        .footer-text {
+            font-size: 22px;
+            font-style: italic;
+            color: rgb(255, 100, 100);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: white;">Students of Faith  Growing, Serving, and Leading on Campus</h1>
+<p style="color: white;">
+    Doxa Deo functions as ONE CHURCH in a city with a variety of campuses and ministries. Everything we do focuses on equipping and raising up people to become agents of positive change in their world, City Changers who Know God, Love People, and Impact Their World.
+</p>
+
+        <p class="highlight">
+            Habakkuk 2:14 ‘The Glory of the Lord will cover the earth as the waters cover the sea.’
+        </p>
+        <p style="color: white;">
+            We have a mission to positively influence every sector of society with the values and the purposes of Jesus. We believe that church, education, social services, business, media, arts, sports, and civil society will flourish when the life-giving values of Jesus Christ are applied in these areas.
+        </p>
+        
+        <p class="footer-text">
+            God's Transforming Presence in Global Cities!
+        </p>
+    </div>
+
+</body>
+</html>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-4">
+                    <h5><img src="logo.png" alt="UCM Logo" style="height: 50px;"> JCSIA </h5>
+                    <p>JCSIA WORSHIP CENTER </p>
+                    <p>1474 JCSIA Worship Center Quirino Highway Bankers Village District I Zone 16 Tala, Caloocan, 1426</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Middle Column -->
+                <div class="col-md-4">
+                    <h5>Schedule of Services</h5>
+                    <p><strong>Sunday  Service</strong><br>8:00 AM 9:00AM 1ST SERVICE BANKERS WORSHIP CENTER </p>
+                    <p><strong>Sunday  Service</strong><br>10:00 AM 12:00PM 2ND SERVICE METROPLAZA MALL MALARIA </p>
+                    <p><strong>YOUTH SERVICE </strong><br>2:00PM 4:00PM | BANKERS WORSHIP CENTER </p>
+                    <p><strong>MIDWEEK </strong><br>6:30 pm | BANKERS WORSHIP CENTER </p>
+                </div>
+    
+                <!-- Right Column -->
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>(632) 8812-6062<br>(632) 8812-5609</p>
+                    <h6>JCSIA ADMIN OFFICE </h6>
+                    <p>Weekdays: 8:00 am - 5:00 pm</p>
+                    <p>Sundays: 8:00 am - 5:00 pm</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+           
+                <div class="footer-bottom">
+                    <h5>TO GOD BE THE GLORY</h5>
+                    <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+                </div>
+    
+    
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

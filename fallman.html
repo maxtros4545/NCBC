@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/45/PhilippinesGeneralCounciloftheAssembliesofGod.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('church.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="123.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">JCSIA  WORSHIP CENTER </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">MINISTRY DEPT.</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="StatementOfFaith.html">STATEMENT OF FAITH </a></li>
+                            <li><a class="dropdown-item" href="Local.html">LOCALE OF CHURCHES  </a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+        
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html">EVENTS</a></li>
+                            <li><a class="dropdown-item" href="Child.html">CHILDREN DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="youth.html">YOUTH DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="Single.html">SINGLE DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">YOUNG COUPLES </a></li>
+                            <li><a class="dropdown-item" href="#">MEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">WOMEN'S DEPARTMENT </a></li>
+                            <li><a class="dropdown-item" href="#">COUPLE'S MINISTRY </a></li>
+                            <li><a class="dropdown-item" href="#">SENIOR'S GOLDEN PILLARS </a></li>
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+
+
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Holy Scriptures</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+           
+            .header-title {
+                text-align: center;
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .language-btn {
+                display: block;
+                margin: 0 auto 15px;
+            }
+            .social-icons {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .social-icons a {
+                color: #007bff;
+                font-size: 20px;
+                margin: 0 10px;
+                transition: color 0.3s;
+            }
+            .social-icons a:hover {
+                color: #0056b3;
+            }
+            .content {
+                text-align: justify;
+                max-width: 800px;
+                margin: auto;
+            }
+            .scripture-image {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 15px auto;
+            }
+            p {
+      color: white;
+    }
+    
+    h2{
+    
+        color: white;
+    
+    }
+    
+    
+    .scripture-image {
+        width: 100%;  /* Adjust width as needed */
+        max-width: 600px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-title a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .card-title a:hover {
+        color: #007bff;
+    }
+    
+    .card-img-top {
+        width: 150px; /* Set desired width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .box {
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.version {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+
+
+.scripture-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.version {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+
+
+.version {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+    color: rgba(255, 255, 255, 0.85); /* Increases text opacity for better readability */
+    padding: 15px; 
+    text-align: center;
+    border-radius: 8px; 
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.version:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            
+            <h2 class="header-title">THE SALVATION OF MAN </h2>
+    
+          
+    
+            
+    
+            <img src="holy.jpg" alt="The Holy Scriptures" class="scripture-image">
+    
+            <div class="content">
+               
+                <p style="text-align: center; color: white;"><b>The Salvation of Man
+                </b></p>
+
+
+    
+                <p style="text-align: center; color: white;">
+                    Man's only hope of redemption is through the shed blood of Jesus Christ the Son of God.
+                </p>
+                
+    
+       </div>
+
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Verse Viewer</title>
+    <script>
+        function displayContent() {
+            const topics = {
+                "salvationConditions": `
+                    <h3>Conditions to Salvation</h3>
+                    <p>Salvation is received through repentance toward God and faith toward the Lord Jesus Christ. 
+                    By the washing of regeneration and renewing of the Holy Spirit, being justified by grace through faith, 
+                    man becomes an heir of God, according to the hope of eternal life.</p>
+                    <a href='https://www.bible.com/bible/1/LUK.24.47.KJV' target='_blank'>Luke 24:47 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/JHN.3.3.KJV' target='_blank'>John 3:3 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/ROM.10.13-15.KJV' target='_blank'>Romans 10:13-15 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/EPH.2.8.KJV' target='_blank'>Ephesians 2:8 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/TIT.2.11.KJV' target='_blank'>Titus 2:11 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/TIT.3.5-7.KJV' target='_blank'>Titus 3:5-7 [KJV/NIV]</a>
+                `,
+                "salvationEvidence": `
+                    <h3>The Evidence of Salvation</h3>
+                    <p>The inward evidence of salvation is the direct witness of the Spirit.</p>
+                    <a href='https://www.bible.com/bible/1/ROM.8.16.KJV' target='_blank'>Romans 8:16 [KJV/NIV]</a><br>
+                    <p>The outward evidence to all men is a life of righteousness and true holiness.</p>
+                    <a href='https://www.bible.com/bible/1/EPH.4.24.KJV' target='_blank'>Ephesians 4:24 [KJV/NIV]</a><br>
+                    <a href='https://www.bible.com/bible/1/TIT.2.12.KJV' target='_blank'>Titus 2:12 [KJV/NIV]</a>
+                `
+            };
+            
+            let selectedTopic = document.getElementById("topicSelect").value;
+            let contentDiv = document.getElementById("contentDisplay");
+            
+            contentDiv.innerHTML = topics[selectedTopic] || "<i>Select a topic and click the button to display content.</i>";
+        }
+    </script>
+    <style>
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #1f618d;
+        }
+        #contentDisplay {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+
+        }
+
+
+        p{
+
+
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bible Verse Viewer</h2>
+    <label for="topicSelect">Select a Topic:</label>
+    <select id="topicSelect">
+        <option value="">Select a topic</option>
+        <option value="salvationConditions">Conditions to Salvation</option>
+        <option value="salvationEvidence">The Evidence of Salvation</option>
+    </select>
+    <button onclick="displayContent()">Show Content</button>
+    <div id="contentDisplay"><i>Select a topic and click the button to display content.</i></div>
+</body>
+</html>
+
+
+         
+
+
+</div>
+<footer class="footer text-light">
+    <div class="container">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-4">
+                <h5><img src="logo.png" alt="UCM Logo" style="height: 50px;"> JCSIA </h5>
+                <p>JCSIA WORSHIP CENTER </p>
+                <p>1474 JCSIA Worship Center Quirino Highway Bankers Village District I Zone 16 Tala, Caloocan, 1426</p>
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="col-md-4">
+                <h5>Schedule of Services</h5>
+                <p><strong>Sunday  Service</strong><br>8:00 AM 9:00AM 1ST SERVICE BANKERS WORSHIP CENTER </p>
+                <p><strong>Sunday  Service</strong><br>10:00 AM 12:00PM 2ND SERVICE METROPLAZA MALL MALARIA </p>
+                <p><strong>YOUTH SERVICE </strong><br>2:00PM 4:00PM | BANKERS WORSHIP CENTER </p>
+                <p><strong>MIDWEEK </strong><br>6:30 pm | BANKERS WORSHIP CENTER </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+                <h5>Contact Info</h5>
+                <p>(632) 8812-6062<br>(632) 8812-5609</p>
+                <h6>JCSIA ADMIN OFFICE </h6>
+                <p>Weekdays: 8:00 am - 5:00 pm</p>
+                <p>Sundays: 8:00 am - 5:00 pm</p>
+            </div>
+        </div>
+    </div>
+            </footer>
+            <div class="footer-bottom">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; Copyright JCSIA (Jesus Christ the Savior International Assembly) 2025. All rights reserved.</p>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

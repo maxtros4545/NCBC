@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Verses by Topic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .description {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Bible Verses by Topic</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="healing.jpg" alt="Healing" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Healing Bible Verses</h2>
+                    <p class="text-gray-600">Find Scripture that encourages faith and healing.</p>
+                    <div class="description text-gray-700" id="healing-description">Healing Bible verses provide hope, encouragement, and reminders of God's power to heal. Scriptures on healing focus on both physical and emotional restoration, encouraging believers to trust in God's ability to heal all wounds.</div>
+                    <button onclick="toggleDescription('healing')" id="healing-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="anxiety.jpg" alt="Worry and Anxiety" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Worry and Anxiety Bible Verses</h2>
+                    <p class="text-gray-600">Find comfort and peace in God's Word.</p>
+                    <div class="description text-gray-700" id="anxiety-description">Worry and anxiety can be overwhelming, but the Bible offers verses that remind us to cast our cares on God. These scriptures provide peace, reassurance, and trust in God's provision, even in the midst of anxiety.</div>
+                    <button onclick="toggleDescription('anxiety')" id="anxiety-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="bible29.jpg" alt="God's Promises" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">God's Promises in the Bible</h2>
+                    <p class="text-gray-600">Find strength and comfort during difficult times.</p>
+                    <div class="description text-gray-700" id="godpromises-description">God's promises in the Bible are a source of hope and encouragement. From promises of protection and provision to the assurance of eternal life, these verses remind us of God's faithfulness.</div>
+                    <button onclick="toggleDescription('godpromises')" id="godpromises-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="hard.jpg" alt="Comfort" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Bible Verses About Faith in Hard Times</h2>
+                    <p class="text-gray-600">God's love and faithfulness in hard times.</p>
+                    <div class="description text-gray-700" id="faithhardtimes-description">When life becomes challenging, these Bible verses encourage believers to keep their faith in God. Scriptures that highlight God's love and power are especially powerful during times of struggle and hardship.</div>
+                    <button onclick="toggleDescription('faithhardtimes')" id="faithhardtimes-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="faith3.jpg" alt="Faith" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Bible Verses About Faith</h2>
+                    <p class="text-gray-600">Strengthen your faith through the Word.</p>
+                    <div class="description text-gray-700" id="faith-description">Faith is central to the Christian walk. These Bible verses remind believers of the importance of having faith in God, trusting His promises, and believing in His ability to work in our lives.</div>
+                    <button onclick="toggleDescription('faith')" id="faith-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="love.jpg" alt="Love" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Bible Verses About Love</h2>
+                    <p class="text-gray-600">Discover God's unconditional love.</p>
+                    <div class="description text-gray-700" id="love-description">Love is a central theme in the Bible, with verses that show God's great love for us and the command to love others. These scriptures inspire believers to reflect God's love in their own lives.</div>
+                    <button onclick="toggleDescription('love')" id="love-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="friend.jpg" alt="Forgiveness" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Friendship Bible Verses</h2>
+                    <p class="text-gray-600">Learn about God's grace and forgiveness.</p>
+                    <div class="description text-gray-700" id="friendship-description">Friendship and forgiveness are key elements in Christian relationships. These Bible verses highlight God's grace and the importance of forgiveness in maintaining healthy, loving friendships.</div>
+                    <button onclick="toggleDescription('friendship')" id="friendship-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="wisdom.jpg" alt="Wisdom" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Bible Verses About Wisdom</h2>
+                    <p class="text-gray-600">Seek God's wisdom and guidance.</p>
+                    <div class="description text-gray-700" id="wisdom-description">Godly wisdom is essential for making decisions and living a life that honors God. These Bible verses provide insight into seeking wisdom from God and applying it to our daily lives.</div>
+                    <button onclick="toggleDescription('wisdom')" id="wisdom-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+            <a href="#" class="bg-white rounded-lg shadow-lg overflow-hidden block">
+                <img src="hope.jpg" alt="Hope" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-blue-700">Bible Verses About Hope</h2>
+                    <p class="text-gray-600">Find hope in God's eternal promises.</p>
+                    <div class="description text-gray-700" id="hope-description">Hope is found in the promises of God. These Bible verses offer encouragement and help believers find hope in God's eternal plan, especially in times of uncertainty or despair.</div>
+                    <button onclick="toggleDescription('hope')" id="hope-button" class="text-blue-500">Read More</button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(topic) {
+            const description = document.getElementById(`${topic}-description`);
+            const button = document.getElementById(`${topic}-button`);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+                button.textContent = "Read Less";
+            } else {
+                description.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>

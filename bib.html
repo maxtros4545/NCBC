@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCSIA WORSHIP CENTER</title>
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .logos img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    
+}
+
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2); /* Transparent background */
+    border-radius: 10px; /* Soft rounded edges */
+}
+
+/* Style for each grid item */
+.grid-item {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for grid items */
+.grid-item:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+    transform: translateY(-5px); /* Lifts the item slightly */
+}
+
+/* Style for links */
+.grid-item a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 16px;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    color: white;
+}
+
+.card h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background: rgba(255, 255, 255, 0.2); /* Transparent button */
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+
+/* Adjust size and padding for dropdown items */
+.dropdown-item {
+  font-size: 14px; /* Adjust font size */
+  padding: 10px 15px; /* Adjust padding to make items fit better */
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 300px; /* Limit the width of the items */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Add an ellipsis for long text */
+}
+
+/* Optional: Adjust the dropdown menu to fit the screen */
+.dropdown-menu {
+  max-height: 400px; /* Set a maximum height */
+  overflow-y: auto; /* Enable scrolling if the dropdown exceeds the max height */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="nbc.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">NORTH CALOOCAN BIBLE COLLEGE  </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">BIBLE COLLEGE </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+                            <li><a class="dropdown-item" href="worship.html">WORSHIP </a></li>
+                            
+                            
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                       
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Caloocan.html" id="bibleStudyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NCBC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="bibleStudyDropdown">
+                            <li><a class="dropdown-item" href="Caloocan.html">NORTH CALOOCAN BIBLE COLLEGE</a></li>
+    
+                            
+                        </ul>
+                    </li>
+                    
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ABOUT 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Lot - 10 Hectares </a></li>
+                            <li><a class="dropdown-item" href="#">3 Story School Building </a></li>
+                            <li><a class="dropdown-item" href="#">Retreat Houses / Camp site </a></li>
+                            <li><a class="dropdown-item" href="#">Swimming pool </a></li>
+                            <li><a class="dropdown-item" href="#">Mission House </a></li>
+                            <li><a class="dropdown-item" href="#">Library building </a></li>
+                            <li><a class="dropdown-item" href="#">Recreation Building </a></li>
+                            <li><a class="dropdown-item" href="#">Sanctuary Building </a></li>
+                            <li><a class="dropdown-item" href="#">Seminary condominium </a></li>
+                            <li><a class="dropdown-item" href="#">Seminary Gymnasium </a></li>
+                            <li><a class="dropdown-item" href="#">Seminary Convention center </a></li>
+                            
+                        </ul>
+                      </li>
+                      
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+
+                    <li class="nav-item">
+                    
+                    
+
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+   
+
+    <video autoplay muted loop id="bg-video">
+        <source src="book.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Biblical Studies</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        .hero {
+          background: url('bible21.jpg') no-repeat center center;
+          background-size: cover;
+          color: white;
+          height: 60vh;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+    
+        .hero-overlay {
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 2rem;
+        }
+    
+        .call-to-action {
+          background-color: #a0331f;
+          color: white;
+          padding: 2rem;
+          text-align: center;
+        }
+    
+        .highlight {
+          border: 2px solid white;
+          border-radius: 20px;
+          padding: 0.2rem 0.5rem;
+          display: inline-block;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <h1 class="display-3 fw-bold">Biblical Studies</h1>
+          <p class="fs-5 fw-semibold">Training Pastor young people with the necessary tools for effective ministry.</p>
+        </div>
+      </section>
+    
+      <!-- Call to Action Section -->
+      <section class="call-to-action">
+        <p class="fs-4">
+          Now is the time for us to <span class="highlight">answer the call</span> to be motivated, equipped and<br>
+          deployed into our world to show the power of Apostolic doctrine and truth to<br>
+          redeem this broken world we live in!
+        </p>
+      </section>
+    
+    </body>
+    </html>
+    
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Indiana Bible College - Biblical Studies</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        .image-container img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+        .section-title {
+          font-weight: 700;
+        }
+        .highlight {
+          font-weight: bold;
+          color: #333;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container py-5">
+        <div class="row align-items-start">
+          <div class="col-md-6 image-container">
+            <img src="nbc.jpg" alt="Classroom Image" class="img-fluid mb-4">
+          </div>
+          <div class="col-md-6">
+            <h4 class="section-title text-white">The Biblical Studies program at North Caloocan Bible College</h4>
+<p class="highlight text-white">is designed with a clear objective in mind: to equip Apostolic ministers with the essential tools for Apostolic interpretation, understanding, and practical application of the Bible.</p>
+<p class="text-white">
+  Through a curriculum centered on theologically holistic courses, students delve deep into the Scriptures, gaining a robust understanding of our beliefs and doctrine. Each class is meticulously crafted to provide a solid biblical foundation, empowering students to navigate the complexities of ministry with confidence and clarity. It’s not just about gaining knowledge; it’s about cultivating a deep-rooted faith and a profound commitment to serving others in the name of Christ.
+</p>
+
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblical Studies Program</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .program-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <!-- Text Section -->
+      <div class="col-md-6">
+        <h5 class="text-white"><strong>In the Biblical Studies program, you will explore the distinctives of Apostolic doctrine, focusing on key theological principles, the early church's teachings, and their application in contemporary pastoral ministry and Christian life.</strong></h5>
+
+        <p style="color: white;">
+            Including the Doctrine of Salvation, the Oneness of God, Christian Worldview, Holiness, the Doctrine of the Spirit, and other basic essentials equipping you to handle objections to our biblical beliefs.
+          </p>
+          <p style="color: white;">
+            You will be exposed to other classes like Science and the Bible dealing with modern objections to the Bible and Christianity. Classes such as Systematic Theology 1 and 2 show the interconnectedness of all we say about God and His Word, while classes such as Contemporary Theology highlight where we are today in terms of the current wider theology of the world and how we got there. Classes such as Apologetics, Archeology and the Bible, Religion Analysis and more show the best ways to reach the world we live in today with the truth of God’s Word.
+          </p>
+          <p style="color: white;">
+            <strong>The Biblical Studies program</strong> equips students to be effective in the following roles: pastor, assistant pastor, youth pastor, evangelist, Bible teacher or instructor, outreach and evangelism coordinator, Sunday school director, author and more.
+          </p>
+          
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <img src="pas7.jpg" alt="Instructor Teaching" class="program-image" />
+        <img src="pas6.jpg" alt="Classroom Scene" class="program-image" />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+    
+        <footer class="footer bg-dark text-light py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-md-4">
+                        <h5>
+                            <img src="logo.png" alt="JCSIA Logo" style="height: 50px;"> JCSIA
+                        </h5>
+                        <p>JCSIA WORSHIP CENTER</p>
+                        <p>1474 JCSIA Worship Center, Quirino Highway, Bankers Village District I, Zone 16, Tala, Caloocan, 1426</p>
+                        <ul class="list-unstyled">
+                            
+                        </ul>
+                    </div>
+        
+                    <!-- Middle Column -->
+                    <div class="col-md-4">
+                        <h5>Schedule of Services</h5>
+                        <p><strong>Sunday Service</strong><br>8:00 AM - 9:00 AM | 1st Service - Bankers Worship Center</p>
+                        <p><strong>Sunday Service</strong><br>10:00 AM - 12:00 PM | 2nd Service - Metroplaza Mall, Malaria</p>
+                        <p><strong>Youth Service</strong><br>2:00 PM - 4:00 PM | Bankers Worship Center</p>
+                        <p><strong>Midweek</strong><br>6:30 PM | Bankers Worship Center</p>
+                    </div>
+        
+                    <!-- Right Column -->
+                    <div class="col-md-4">
+                        <h5>Contact Info</h5>
+                        <p>(632) 8812-6062<br>(632) 8812-5609</p>
+                        <h6>JCSIA ADMIN OFFICE</h6>
+                        <p>Weekdays: 8:00 AM - 5:00 PM</p>
+                        <p>Sundays: 8:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom text-center mt-4">
+                <h5>TO GOD BE THE GLORY</h5>
+                <p>&copy; 2025 JCSIA (Jesus Christ the Savior International Assembly). All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+       
+  
+        
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+
+        

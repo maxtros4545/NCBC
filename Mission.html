@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH CALOOCAN BIBLE COLLEGE </title>
+    <link rel="icon" href="nbc.jpg" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('Home.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+            section-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 50px 0;
+            }
+            .image-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+            .text-container {
+                padding: 20px;
+            }
+            .text-container h2 {
+                font-weight: bold;
+            }
+            .text-container p {
+                color: #6c757d;
+            }
+
+            .mission-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .mission-text {
+            max-width: 50%;
+        }
+        .mission-text h2 {
+            font-weight: bold;
+        }
+        .mission-text hr {
+            width: 50px;
+            border: 3px solid black;
+            margin-bottom: 15px;
+        }
+        .mission-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+
+    </style>
+</head>
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="nbc.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">NORTH CALOOCAN BIBLE COLLEGE </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">BIBLE COLLEGE </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+                            <li><a class="dropdown-item" href="worships.html">STATEMENT OF THE FAITH </a></li>
+                            <li><a class="dropdown-item" href="program.html">PROGRAM </a></li>
+                            <li><a class="dropdown-item" href="Academics.html">ACADEMICS </a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            
+                        </ul>
+                    </li>
+                    
+
+
+                    
+                    
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+
+
+    
+ 
+    
+    <div class="container">
+        <div class="row section-container">
+            <div class="col-md-6 image-container">
+                <img src="pas3.jpg" alt="Church Gathering">
+            </div>
+            <div class="col-md-6 text-container">
+                <hr style="width: 50px; border: 2px solid black; margin-bottom: 15px;">
+                <h2 style="color: white;">In our church we trust in the strength of God's love</h2>
+<p style="color: white;">
+    NCBC, we trust in the strength of God's love our guiding light, our comfort, and the bond that unites us. His love is our foundation, bringing hope in trials, peace in chaos, and joy in our faith journey. Through His grace, we grow stronger, serve faithfully, and walk in His light with unwavering devotion.
+</p>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+   
+    <div class="container">
+        <div class="mission-section">
+            <div class="mission-text">
+                <hr>
+                <h2 style="color: white;">OUR MISSION</h2>
+
+<p style="color: white;">
+  <strong>OUR MISSION:</strong> The mission of NCBC is to follow the Great Commission of the Lord in Matthew 28:18–20 — to train leaders for the expansion of God's Kingdom.
+</p>
+
+<p style="color: white;"><strong>Matthew 28:16–20</strong></p>
+
+<p style="color: white;">16 Then the eleven disciples went away into Galilee, into a mountain where Jesus had appointed them.</p>
+
+<p style="color: white;">17 And when they saw Him, they worshipped Him: but some doubted.</p>
+
+<p style="color: white;">18 And Jesus came and spoke unto them, saying, "All power is given unto Me in heaven and in earth."</p>
+
+<p style="color: white;">19 "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost:"</p>
+
+<p style="color: white;">20 "Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen."</p>
+
+<p style="color: white;">
+  This passage is known as <strong>The Great Commission</strong>, where Jesus commands His disciples to spread the Gospel to all nations. 🙏
+</p>
+
+            </div>
+            <div class="mission-image">
+                <img src="pas2.jpg" alt="Mission Image">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program Features</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .feature-box {
+      background-color: #345b6c;
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      height: 100%;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+    .divider {
+      width: 30px;
+      height: 2px;
+      background-color: white;
+      margin: 0.5rem auto 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-journal-bookmark"></i></div>
+         
+          <p>Through our well-rounded two-year Associate Degree in Biblical Studies, students complete their general education classes while establishing an informed understanding of your faith.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-arrow-left-right"></i></div>
+          
+          <p>Rosedale graduates can transfer to one of our partner schools to finish their bachelor’s degree. In some cases, this is able to be done in just two additional years.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+          
+          <p>Our mentorship program provides both spiritual discipleship and practical life skills training to prepare students for life after college.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-globe-americas"></i></div>
+          <p>Educational opportunities like our cross-cultural learning program and the Akwachink Leadership School give students challenging, real-world experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Footer Example</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap Icons -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        .footer {
+          width: 100%;
+          background-color: #212529;
+          color: white;
+        }
+    
+        .footer h5 {
+          font-size: 2rem;
+        }
+    
+        .footer-bottom {
+          background-color: #1a1a1a;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+    
+        .footer a:hover {
+          text-decoration: underline;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <footer class="footer text-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Address -->
+          <div class="col-md-3 mb-4">
+            <div class="logo mb-2">
+              <img src="nbc.jpg" alt="Olivet University Logo" class="rounded-circle mb-2" width="80">
+            </div>
+            <address class="small">
+              36401 Tripp Flats Rd.<br>
+              Anza, CA 92539<br>
+              Tel. 951.763.0500
+            </address>
+            <div class="social-icons mt-2">
+              <i class="bi bi-facebook me-2"></i>
+              <i class="bi bi-twitter-x me-2"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="mt-3 small">&copy; 2025 Olivet University. All Rights Reserved.</div>
+          </div>
+    
+          <!-- About Section -->
+          <div class="col-md-2 mb-4">
+            <h6>ABOUT</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Welcome</a></li>
+              <li><a href="#" class="text-light text-decoration-none">History</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Founder</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Mission</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Memberships</a></li>
+            </ul>
+          </div>
+    
+          <!-- Pastoral Section -->
+          <div class="col-md-2 mb-4">
+            <h6>PASTORAL</h6>
+            <ul class="list-unstyled">
+              <li><a href="derrydotosme.html" class="text-light text-decoration-none">REV. DERRY DOTOSME</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Core Learning Outcomes</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Academic Standards</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Research & Development</a></li>
+            </ul>
+          </div>
+    
+          <!-- Program by Location -->
+          <div class="col-md-2 mb-4">
+            <h6>PROGRAM BY LOCATIONS</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Riverside</a></li>
+              <li><a href="#" class="text-light text-decoration-none">San Francisco</a></li>
+              <li><a href="#" class="text-light text-decoration-none">St. Louis</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Washington D.C.</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Sanford</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Nashville</a></li>
+            </ul>
+          </div>
+    
+          <!-- Admission & Aid -->
+          <div class="col-md-3 mb-4">
+            <h6>ADMISSION & AID</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Undergraduate Programs</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Graduate Programs</a></li>
+              <li><a href="#" class="text-light text-decoration-none">International Students</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Financial Info</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Continuing Education</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Consumer Info</a></li>
+            </ul>
+          </div>
+        </div>
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+       
+   
+    
+    
+
+           
+     

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - SJEST</title>
+    <link rel="icon" type="image/png" href="nbc.jpg"> <!-- Favicon added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-800 text-white text-center p-2 text-sm">
+        NORTH CALOOCAN BIBLE COLLEGE
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="nbc.jpg" alt="SJEST Logo" class="h-10">
+            <span class="font-bold text-lg">NORTH CALOOCAN BIBLE COLLEGE</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="Caloocan.html" class="hover:text-green-600">HOME</a></li>
+            <li><a href="Caloocan1.html" class="hover:text-green-600">ABOUT</a></li>
+            <li><a href="Caloocan3.html" class="text-green-600 font-semibold">MINISTRY</a></li>
+            <li><a href="Caloocan4.html" class="hover:text-green-600">COURSE</li>
+            <li><a href="Calooocan5.html" class="hover:text-green-600">LOCATION</a></li>
+         
+        </ul>
+        
+        <a href="Caloocan.html" class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
+            BACK TO NCBC
+        </a>
+
+
+        
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <img src="nbc.jpg" alt="Menu" class="h-6">
+        </button>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning & Serving</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+
+.bg-transparent {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('nbc.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+</style>
+<body class="bg-white text-gray-900">
+    <div class="relative w-full h-screen">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="Bible12.jpg" alt="Background Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <h1 class="text-white text-4xl md:text-5xl font-bold">WELCOME TO <br> NORTH CALOOCAN BIBLE COLLEGE</h1>
+            <p class="text-white text-lg mt-4 max-w-2xl text-justify">
+                At North Caloocan Bible College, we are dedicated to equipping students with biblical knowledge, spiritual growth, and leadership skills. Our mission is to develop strong, faith-driven individuals who will serve God and their communities with wisdom and compassion. Through our comprehensive curriculum, experienced faculty, and Christ-centered environment, we provide quality theological education that nurtures both heart and mind. Whether you are preparing for ministry or deepening your understanding of the Bible, NCBC is here to guide you on your journey. Join us and be part of a transformative learning experience rooted in faith and excellence.
+            </p>
+            
+            <p class="text-white text-lg mt-4 max-w-2xl text-justify">
+                NCBC IS AN ACTIVE MEMBER OF PABATS [ PHILIPPINE ASSOCIATION OF THE BIBLE AND THEOLOGICAL SCHOOLS ] 
+            </p>
+    </div>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indiana Bible College Minors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .minor-card {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .minor-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .program-link {
+      color: #b02a37;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Minors</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Biblical Studies -->
+      <div class="col">
+        <div class="minor-card">
+          <img src="b1.jpg" alt="Biblical Studies" class="minor-img mb-3">
+          <h4>Biblical Studies</h4>
+          <button class="btn btn-link p-0" onclick="toggleText('biblical')">Learn More</button>
+          <div id="biblical" class="mt-2 d-none">
+            <p><strong>The Biblical Studies minor at North Caloocan Bible College focuses on training Pastor ministry with the necessary tools for effective ministry, emphasizing deep theological understanding, practical leadership skills, and a commitment to biblical truth.</strong> This program prepares students to lead congregations with integrity, wisdom, and a heart for service.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Missiology -->
+      <div class="col">
+        <div class="minor-card">
+          <img src="b2.jpg" alt="Missiology" class="minor-img mb-3">
+          <h4>Missiology</h4>
+          <button class="btn btn-link p-0" onclick="toggleText('missiology')">Learn More</button>
+          <div id="missiology" class="mt-2 d-none">
+            <p><strong>The Missiology minor</strong> is designed to provide training for missionaries and others who serve or plan to serve in intercultural ministry and church multiplication positions.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Christian Leadership -->
+      <div class="col">
+        <div class="minor-card">
+          <img src="b3.jpg" alt="Christian Leadership" class="minor-img mb-3">
+          <h4>Christian Leadership</h4>
+          <button class="btn btn-link p-0" onclick="toggleText('leadership')">Learn More</button>
+          <div id="leadership" class="mt-2 d-none">
+            <p><strong>The Christian Leadership minor at NCBC Bible College trains students to be Biblically centered, spiritually sensitive, and technically capable, equipping them to effectively lead churches and ministries into future growth, while fostering a deep understanding of leadership principles grounded in faith and service.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleText(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('d-none');
+    }
+  </script>
+</body>
+</html>
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TC Indian Land</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans">
+        <header class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/an-open-bible-royalty-free-image-1681152546.jpg?crop=1xw:0.99867xh;center,top&resize=1200:*');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center">
+                <h1 class="text-5xl font-bold">WELCOME</h1>
+                <p class="text-lg mt-2">NORTH CALOOCAN BIBLE COLLEGE </p>
+            </div>
+        </header>
+    
+        <section class="max-w-4xl mx-auto text-center py-12">
+            <h2 class="text-3xl font-bold">Join Us for Bible School Service This Weekend</h2>
+            <p class="text-gray-700 mt-4 px-6 text-justify">
+                We’re a vibrant, multiethnic, multigenerational community, united in our mission to serve God and spread His love. We believe that the Church isn’t just a building – it’s a people, a family, bound together by faith, love, and purpose. At the heart of our mission is the belief that we are called to love God completely, to understand and embrace His love for us, and to live out that love in our relationships with ourselves and with others.
+            
+                Our community is made up of people from all walks of life, different cultures, and varying backgrounds. We value the richness that diversity brings, knowing that it reflects the beauty of God's creation. We are committed to creating a welcoming environment where everyone can experience God's love and grow in their faith journey, no matter where they are in life.
+            
+                This weekend, we invite you to join us as we come together to worship, learn, and connect as a family. Whether you're new to the faith or have been walking with God for years, there’s a place for you here. We believe that each person is unique and valuable, and we’re excited to see how God will move in your life.
+            
+                Come, be part of something bigger than yourself. Let’s love God, love ourselves, and love our neighbors, and let’s do it together. We hope to see you this weekend!
+            </p>
+            
+            
+        </section>
+    
+    
+
+    </body>
+    </html>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testimonials</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+
+.logo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #800080; /* Purple border */
+            background-color: #fff; /* White background */
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .w-16 {
+  width: 64px; /* Adjust based on your preferred size */
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the circle properly */
+  border: 2px solid #fff; /* Optional: Adds a white border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+        
+        </style>
+    </head>
+    <body class="bg-gray-100">
+        <div class="max-w-4xl mx-auto py-12 px-6">
+            <div class="space-y-12">
+                <!-- Testimonial 1 -->
+                <div class="text-center">
+                
+                  
+                    <p class="text-lg text-gray-700 italic text-justify max-w-2xl mx-auto">
+                        "God used NCBC to help me learn new theological and Biblical skills, unlearn personal hindrances to spiritual growth, and relearn the value of accountability and community. Through the teachings and fellowship at NCBC, I have gained a deeper understanding of Scripture and have been equipped with practical tools to apply in my daily life. It has been a place where I’ve not only discovered new perspectives on God’s Word but also recognized the areas where I needed to grow in my faith. The community has been a source of support, encouragement, and challenge, helping me to overcome spiritual obstacles and walk more closely with God. The emphasis on accountability has also taught me the importance of surrounding myself with fellow believers who can help keep me focused and grounded in my faith journey. NCBC has truly been a transformative experience, deepening my relationship with God and with others."
+                    </p>
+                    <p class="text-4xl font-serif text-gray-600">&rdquo;</p>
+                </div>
+
+
+                 
+                <div class="flex justify-center space-x-4 mb-4">
+                  
+                    <img src="nbc.jpg" alt="School Logo 2" class="w-[100px] h-[100px] rounded-full">
+                </div>
+                
+
+        
+                
+             <!-- Testimonial 2 -->
+<div class="text-center">
+   
+    
+    <p class="text-4xl font-serif text-gray-600">&ldquo;</p>
+    <p class="text-lg text-gray-700 italic text-justify mx-auto max-w-3xl">
+        "The training in NCBC is not confined to the classroom. It extends beyond lectures and textbooks into real-life experiences that shape and deepen my faith. Moreover, through my daily interactions with people in NCBC’s intercultural community, I gained valuable insights into God’s work in other cultures. Each conversation, story, and perspective has broadened my understanding of how God is moving across the world and has deepened my appreciation for His global mission. These experiences have challenged me to remain faithful to God’s call and the Great Commission, inspiring me to actively live out my faith with a heart for reaching people of all backgrounds. The diversity within the community has also taught me the importance of embracing and learning from others, recognizing that God’s work is not limited by borders, but transcends cultures and languages. I am constantly reminded that our role as believers is to share the love of Christ in every context, and this experience has ignited a greater passion for missions and serving others"
+    </p>
+    <p class="text-4xl font-serif text-gray-600">&rdquo;</p>
+</div>
+
+
+            </div>
+        </div>
+    </body>
+    </html>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Section</title>
+            <style>
+    
+            .contact-header {
+                background-color: #5b8fb9;
+                padding: 20px;
+                text-align: center;
+            }
+            .contact-header a {
+                text-decoration: none;
+            }
+            .contact-button {
+                background-color: #ff6600;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 5px;
+            }
+            .mission-section {
+                background-color: #5b8fb9;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="contact-header">
+            <button class="contact-button">Contact us</button>
+            <p>
+                
+            </p>
+        </div>
+        
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.06370709822!2d121.08242607510944!3d14.76544088574068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a55409cadb21%3A0x89308ffa988d134a!2sJCSIA%20Worship%20Center!5e0!3m2!1sen!2sph!4v1741923040967!5m2!1sen!2sph" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="text-center mt-2">
+                        <a href="https://www.google.com/maps/place/JCSIA+Worship+Center" 
+                           class="btn btn-outline-secondary">
+                            &#128506; Map and directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mission-section mt-4">
+            <p>Our mission is to proclaim the transforming presence of Jesus Christ through biblical teaching and practical training, equipping men and women for service in His Church worldwide.</p>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+    <div class="max-w-5xl bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+        <div class="relative md:w-1/2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/0013jfQuirino_Highway_Caloocan_Novaliches_San_Jose_Bulacan_City_sectionsfvf_02.JPG/2560px-0013jfQuirino_Highway_Caloocan_Novaliches_San_Jose_Bulacan_City_sectionsfvf_02.JPG" alt="Campus Image" class="w-full h-full object-cover rounded-t-lg md:rounded-l-lg">
+        </div>
+        <div class="p-8 md:w-1/2">
+            <h2 class="text-4xl font-serif italic text-blue-900 mb-4">Campus</h2>
+            <p class="text-gray-700 text-sm leading-relaxed">
+                JCSIA and NCBC Church campuses serve as vibrant centers for spiritual growth, education, and community engagement. JCSIA fosters a dynamic learning environment, equipping students with academic excellence and leadership skills. Meanwhile, NCBC Church provides a place of worship, fellowship, and outreach programs that enrich lives through faith and service. Both institutions work together to create a holistic experience, combining knowledge with spiritual nourishment. With a commitment to uplifting individuals and communities, they offer various programs, events, and initiatives that inspire growth, unity, and purpose. Their shared mission is to empower people to lead with wisdom, integrity, and compassion.            </p>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
+
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Child High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+
+.w-16 {
+  width: 64px; /* Adjust based on your preferred size */
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the circle properly */
+  border: 2px solid #fff; /* Optional: Adds a white border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+
+</style>
+<body class="bg-gray-100">
+    <div class="grid md:grid-cols-2 min-h-screen">
+        <!-- Left Image Section -->
+        <div class="relative">
+            <img src="Holy2.jpg" alt="Holy Child High School" class="w-full h-full object-cover">
+        </div>
+        
+      <!-- Right Content Section -->
+<div class="bg-green-800 text-white p-10 flex flex-col justify-center">
+    <div class="text-center">
+        <!-- Logos Section -->
+        <div class="flex justify-center space-x-4 mb-4">
+            <img src="ag.png" alt="School Logo 1" class="w-16 h-16 rounded-full">
+            <img src="nbc.jpg" alt="School Logo 2" class="w-16 h-16 rounded-full">
+            <img src="logo.png" alt="School Logo 3" class="w-16 h-16 rounded-full">
+        </div>
+
+        
+
+        <!-- Description -->
+        <p class="text-lg leading-relaxed text-justify">
+            NORTH CALOOCAN BIBLE COLLEGE, JESUS CHRIST INTERNATIONAL ASSEMBLIES, AND ASSEMBLIES OF GOD envision a community of Christ-like individuals who embody faith, integrity, and excellence. Committed to lifelong learning, they strive to be globally competitive, service-driven, and responsible stewards of God’s blessings. With hearts full of compassion and love, they extend help to those in need, uphold moral and spiritual values, and actively contribute to social transformation.
+        
+            Through dedicated service, they inspire change, promote unity, and foster a culture of kindness and generosity. Their mission is to nurture individuals who lead with purpose, wisdom, and unwavering devotion to God and humanity. By equipping students with biblical knowledge, ethical principles, and practical skills, they prepare them to make meaningful contributions to society.
+            
+            They encourage continuous growth in faith, knowledge, and service, developing leaders who are passionate about evangelism, discipleship, and community outreach. With a deep sense of responsibility, they uphold the teachings of Christ, empowering individuals to create a lasting impact in their families, churches, and communities. Through education and ministry, they shape individuals who embody God’s love and truth, bringing hope and transformation to the world.
+        </p>
+        
+    </div>
+
+    <!-- Contact Info -->
+    <div class="mt-8 border-t border-white pt-6">
+        <h2 class="text-xl font-bold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 7.5v9a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 16.5v-9M12 3v18m-3-10.5h6m-6 3h6" />
+            </svg>
+            Contact Us
+        </h2>
+        
+        <p class="mt-2 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75-4.365-9.75-9.75-9.75zm0 0v9.75l5.25 3" />
+            </svg>
+            1474 JCSIA Worship Center, Quirino Highway, Bankers Village District I Zone 16, Tala, Caloocan, 1426
+        </p>
+        
+        <p class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            Contact No: +6327091403
+        </p>
+        
+        <p class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5M3.75 19.5h16.5m-16.5 0v-15m16.5 15v-15m-16.5 0l8.25 6.75m8.25-6.75L12 11.25" />
+            </svg>
+            Email: onejcsia@gmail.com
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <p class="text-sm text-gray-300 mt-6">&copy; 2025 | NORTH CALOOCAN BIBLE COLLEGE  | All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

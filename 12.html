@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Church and Its Mission</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #007bff;
+        }
+        #content {
+            min-height: 200px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        select {
+            border: 2px solid #007bff;
+        }
+    </style>
+    <script>
+        function showContent() {
+            let topic = document.getElementById("topicSelect").value;
+            let contentDiv = document.getElementById("content");
+
+            let content = {
+                "church_mission": `
+                    <h4 class="text-primary">The Church and Its Mission</h4>
+                    <p>The Church is the Body of Christ, the habitation of God through the Spirit, with divine appointments for the fulfillment of her great commission.</p>
+                    <p><strong>Scripture References:</strong></p>
+                    <ul>
+                        <li><a href="https://www.bible.com/bible/1/EPH.1.22-23.KJV" target="_blank">Ephesians 1:22-23</a></li>
+                        <li><a href="https://www.bible.com/bible/1/EPH.2.22.KJV" target="_blank">Ephesians 2:22</a></li>
+                        <li><a href="https://www.bible.com/bible/1/HEB.12.23.KJV" target="_blank">Hebrews 12:23</a></li>
+                    </ul>`,
+
+                "purpose": `
+                    <h4 class="text-primary">God’s Purpose for the Church</h4>
+                    <ul>
+                        <li><strong>To evangelize the world:</strong>
+                            <a href="https://www.bible.com/bible/1/ACT.1.8.KJV" target="_blank">Acts 1:8</a>
+                        </li>
+                        <li><strong>To be a body for worship:</strong>
+                            <a href="https://www.bible.com/bible/1/1CO.12.13.KJV" target="_blank">1 Corinthians 12:13</a>
+                        </li>
+                        <li><strong>To build a body of saints:</strong>
+                            <a href="https://www.bible.com/bible/1/EPH.4.11-16.KJV" target="_blank">Ephesians 4:11-16</a>
+                        </li>
+                    </ul>`,
+
+                "assemblies_mission": `
+                    <h4 class="text-primary">The Mission of the Assemblies of God</h4>
+                    <p>The Assemblies of God follows the New Testament apostolic pattern by teaching believers to be baptized in the Holy Spirit.</p>
+                    <p><strong>Scripture References:</strong></p>
+                    <ul>
+                        <li><a href="https://www.bible.com/bible/1/MRK.16.15-20.KJV" target="_blank">Mark 16:15-20</a></li>
+                        <li><a href="https://www.bible.com/bible/1/ACT.4.29-31.KJV" target="_blank">Acts 4:29-31</a></li>
+                        <li><a href="https://www.bible.com/bible/1/GAL.5.22-26.KJV" target="_blank">Galatians 5:22-26</a></li>
+                    </ul>`,
+
+                "ministry": `
+                    <h4 class="text-primary">The Ministry</h4>
+                    <p>A divinely called and scripturally ordained ministry has been provided by our Lord for the fourfold purpose of leading the Church in:</p>
+                    <ul>
+                        <li><strong>Evangelization of the world:</strong> <a href="https://www.bible.com/bible/1/MRK.16.15-20.KJV" target="_blank">Mark 16:15-20</a></li>
+                        <li><strong>Worship of God:</strong> <a href="https://www.bible.com/bible/1/JHN.4.23-24.KJV" target="_blank">John 4:23-24</a></li>
+                        <li><strong>Building a body of saints being perfected in the image of His Son:</strong> <a href="https://www.bible.com/bible/1/EPH.4.11-16.KJV" target="_blank">Ephesians 4:11-16</a></li>
+                        <li><strong>Meeting human needs with ministries of love and compassion:</strong></li>
+                        <ul>
+                            <li><a href="https://www.bible.com/bible/1/PSA.112.9.KJV" target="_blank">Psalms 112:9</a></li>
+                            <li><a href="https://www.bible.com/bible/1/GAL.2.10.KJV" target="_blank">Galatians 2:10</a></li>
+                            <li><a href="https://www.bible.com/bible/1/GAL.6.10.KJV" target="_blank">Galatians 6:10</a></li>
+                            <li><a href="https://www.bible.com/bible/1/JAS.1.27.KJV" target="_blank">James 1:27</a></li>
+                        </ul>
+                    </ul>`
+            };
+            
+            contentDiv.innerHTML = content[topic] || "<em class='text-muted'>Select a topic and click the button to display content.</em>";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Select a Topic</h2>
+        <div class="mb-3">
+            <label for="topicSelect" class="form-label">Choose a topic:</label>
+            <select id="topicSelect" class="form-select">
+                <option value="">Select a topic</option>
+                <option value="church_mission">The Church and Its Mission</option>
+                <option value="purpose">God’s Purpose for the Church</option>
+                <option value="assemblies_mission">The Mission of the Assemblies of God</option>
+                <option value="ministry">The Ministry</option>
+            </select>
+        </div>
+        <button class="btn btn-primary w-100" onclick="showContent()">Show Content</button>
+        <div id="content" class="mt-3 p-3 bg-white border rounded">
+            <em class="text-muted">Select a topic and click the button to display content.</em>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

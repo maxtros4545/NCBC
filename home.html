@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Interactive Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        #map { height: 500px; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-6xl bg-white shadow-xl rounded-lg p-8">
+        <h1 class="text-3xl font-extrabold text-center text-blue-600 mb-6">📍 Location Map</h1>
+        <p class="text-center text-gray-600 mb-4">Explore various locations on the interactive map.</p>
+        <div id="map" class="w-full rounded-lg shadow-md"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = L.map("map").setView([14.5995, 120.9842], 6);
+            
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            const locations = [
+                { name: "Amparo", lat: 14.7333, lon: 121.0511 },
+                { name: "Bankers", lat: 14.6504, lon: 121.0493 },
+                { name: "Cubao", lat: 14.6192, lon: 121.0567 },
+                { name: "Ciudad Real", lat: 14.8533, lon: 120.9375 },
+                { name: "Pleasant", lat: 14.7547, lon: 121.0712 },
+                { name: "Metro Plaza", lat: 14.676, lon: 121.0437 },
+                { name: "Bicol", lat: 13.3333, lon: 123.3333 },
+                { name: "Nueva Ecija", lat: 15.479, lon: 120.8762 },
+                { name: "Baguio", lat: 16.4023, lon: 120.596 },
+                { name: "Tungko", lat: 14.8361, lon: 121.0689 },
+                { name: "Towerville", lat: 14.8222, lon: 121.0591 },
+                { name: "Palmera", lat: 14.7123, lon: 121.0734 },
+                { name: "Graceville", lat: 14.8089, lon: 121.0534 },
+                { name: "Kaybangan", lat: 14.9000, lon: 121.1167 },
+                { name: "Gumaco", lat: 13.9078, lon: 122.1261 },
+                { name: "Benjamin", lat: 14.6000, lon: 121.0000 },
+                { name: "Davao", lat: 7.1907, lon: 125.4553 },
+                { name: "Hongkong", lat: 22.3193, lon: 114.1694 },
+                { name: "Poblacion", lat: 14.6333, lon: 121.0333 },
+                { name: "Sta Maria", lat: 14.8286, lon: 120.9574 },
+                { name: "Feliciano", lat: 14.7500, lon: 121.0500 },
+                { name: "Vista Verde", lat: 14.7000, lon: 121.1000 },
+                { name: "Toyota", lat: 14.5500, lon: 121.0000 },
+                { name: "Parada", lat: 14.7500, lon: 121.0000 },
+                { name: "Marilao", lat: 14.7753, lon: 120.9486 },
+                { name: "San Ildefonso", lat: 15.0842, lon: 120.9404 },
+                { name: "Pampanga", lat: 15.0794, lon: 120.6196 },
+                { name: "Olongapo", lat: 14.8372, lon: 120.2842 },
+                { name: "Pabahay", lat: 14.6000, lon: 121.0500 },
+                { name: "Norzagaray", lat: 14.9106, lon: 121.0495 }
+            ];
+
+            locations.forEach(location => {
+                L.marker([location.lat, location.lon], { icon: L.icon({
+                    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34]
+                })})
+                    .addTo(map)
+                    .bindPopup(`<b>${location.name}</b>`);
+            });
+        });
+    </script>
+</body>
+</html>

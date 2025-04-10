@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORTH CALOOCAN BIBLE COLLEGE </title>
+    <link rel="icon" href="nbc.jpg" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #002147;
+            font-family: Arial, sans-serif;
+            background: url('1234.png') no-repeat center center fixed;
+
+
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: orange;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+        .nav-link:hover {
+            color: #FF6600;
+        }
+
+        
+
+        .card {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .card h5 {
+            color: #00ff00;
+        }
+        .btn-custom {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .title {
+            margin-top: 30px;
+        }
+        
+
+        .hero-section {
+            background: linear-gradient(to bottom, #0a1635, #162850);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        .theme-section {
+            background-color: #fff5e1;
+            text-align: center;
+            padding: 40px;
+        }
+        .theme-section h2 {
+            color: #0a1635;
+            font-weight: bold;
+        }
+        .theme-section p {
+            color: #3366cc;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to bottom, #1a1a50, #050530);
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            width: 80px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            border-bottom: 1px solid white;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .background-text {
+            position: absolute;
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+        .footer-title {
+            font-weight: bold;
+            color: #ccc;
+        }
+        .footer-bottom {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            color: #444;
+        }
+        .footer-bottom h5 {
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .banner {
+            position: relative;
+            background: url('image.png') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+                        background-color: #1b1e3d;
+                        color: white;
+                    }
+                    .service-card img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+
+             
+  
+                    .hero-section {
+                background-color: #0D1B40;
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .hero-section h1 {
+                font-weight: bold;
+                color: #ff4d4d;
+            }
+            .content-section {
+                background-color: #F8F5F1;
+                padding: 40px 20px;
+            }
+            .btn-custom {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .btn-custom:hover {
+                background-color: #333;
+            }
+    
+
+            .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+/* Individual Box Styles */
+.gospel {
+    background-color: #e27d2d;
+}
+
+.mission {
+    background-color: #c1272d;
+}
+
+.scripture {
+    background-color: #2d4f85;
+}
+
+.renewal {
+    background-color: #4a752c;
+}
+
+/* Tree Image */
+.tree {
+    padding: 10px;
+}
+
+.tree img {
+    width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .tree img {
+        width: 100px;
+    }
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/* Centering the Worship Section */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Centering the Content Section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Align Left and Right Boxes in Center */
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Box Styling */
+.box {
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+/* Individual Box Colors */
+.gospel {
+    background-color: #e27d2d;
+}
+
+.mission {
+    background-color: #c1272d;
+}
+
+.scripture {
+    background-color: #2d4f85;
+}
+
+.renewal {
+    background-color: #4a752c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+ </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="nbc.jpg" alt="Logo" height="50">
+                <span class="ms-2 fw-bold">NORTH CALOOCAN BIBLE COLLEGE </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Ministry.html" role="button" data-bs-toggle="dropdown">BIBLE COLLEGE </a>
+                        <ul class="dropdown-menu">
+                          
+                            <li><a class="dropdown-item" href="History.html">OUR HISTORY</a></li>
+                            <li><a class="dropdown-item" href="Pastor.html">OUR PASTOR</a></li>
+                            <li><a class="dropdown-item" href="Mission.html">MISSION  </a></li>
+                            <li><a class="dropdown-item" href="Vission.html">VISSION  </a></li>
+                            <li><a class="dropdown-item" href="Values.html">VALUES </a></li>
+                            <li><a class="dropdown-item" href="worships.html">STATEMENT OF THE FAITH </a></li>
+                            <li><a class="dropdown-item" href="program.html">PROGRAM </a></li>
+                            <li><a class="dropdown-item" href="Academics.html">ACADEMICS </a></li> 
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+
+                    </li>
+                    
+
+
+                    
+
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">LOCATION </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Statement of Beliefs</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container my-5">
+            <h1 class="text-center mb-4 text-white">Statement of Faith</h1>
+            <div class="card">
+                <div class="card-body">
+                    <p>We believe that the sixty-six books of the Old and New Testaments are inspired of God in their original writings (II Timothy 3:16a); that the writers wrote them under the guidance of the Holy Spirit (II Peter 1:21); that though there are some passages whose sentiments are not of God (Psalms 14:1; Job 1:9-11; 2:4-5), yet they are recorded accurately. We believe, therefore, that the Bible is the Word of God and our final authority in all matters of faith and practice (II Timothy 3:16b-17).</p>
+                    <p>We believe in the unity of the Godhead (Deuteronomy 6:4; Ephesians 4:4-6), eternally existing in three Persons: Father, Son, and Holy Spirit (Matthew 28:19; II Corinthians 13:14); that these three Persons are separate and distinct personalities, yet One in divine essence, attributes, and purpose.</p>
+                    <p>We believe in Jesus Christ, the only begotten Son of God (John 3:16), who is Himself God, co-equal and co-eternal with the Father (John 1:1; Philippians 2:6), but who humbled Himself and became man for the redemption of the human race (Philippians 2:7-8). He was born of a virgin and lived a sinless life (Matthew 1:23; Hebrews 7:26). He died on the cross as a substitute for sinners (1 Peter 3:18), thus providing the only means whereby sinful man can be redeemed (Acts 4:12). As He prophesied, He was raised bodily from the dead on the third day after His crucifixion (Matthew 28:6); He then ascended to the right hand of the Father where He is now the Advocate of believers (Hebrews. 9:24).</p>
+                    <p>We believe in the Holy Spirit who is the Third Person of the Triune God (Acts 5:3-4; I Corinthians 12:3; II Corinthians 3:17-18) whose earthly ministry is to reveal the person and work of the Son to the praise of the Father (John 14:26; 15:26; 16:14). The Holy Spirit convicts men of sin and reproves the world of righteousness and judgment (John 16:8-10). Through Him, regeneration is accomplished in the life of those believing in Christ (John 3:5-6). He indwells all true believers and produces in them the fruits of righteousness (John 14:17; 1 Corinthians 3:16; Galatians 5:22-23). The Holy Spirit begins at conversion the work of sanctification which continues while the believer is on earth (II Thessalonians 2:13). He instructs believers in the things of God (John 14:26), provides victory over sin, and empowers them to witness for Christ (Acts 1:8).</p>
+                    <p>We believe that through the sin of the first man, Adam, the whole human race sinned and became eternally lost and condemned (Romans 5:12; 3:23; 6:23); that man could not be saved through any merit, or work of his own (Ephesians 2:8-9; Romans 4:4-5); that his only hope of salvation is through personal faith in Jesus Christ as his Sin-bearer on the cross of Calvary (I Peter 1:18-19; Romans 3:24-26; John 1:12; Acts 16:31); and that as a result of such faith in His vicarious death a person becomes a new creation in Christ through the regeneration of the Holy Spirit (Titus 3:5; II Corinthians 5:17).</p>
+                    <p>We believe that the Church is the Body of Christ comprised of all true believers who have been united to Him by the regenerating work of the Holy Spirit (I Corinthians 12:13; Ephesians 1:4-6; 4:11-15); that the visible church is a fellowship of redeemed men who meet for a common worship of God, for mutual edification, and for the proper observance of the ordinances of the Lord’s Supper and baptism (Acts 2:42-46; I Corinthians 11:23-26; Matthew 28:19; Acts 2:41); that it is a center of witness, through which the Gospel is preserved and propagated to other men (Matthew 28:18-20; Acts 1:8; 8:1-4).</p>
+                    <p>We believe that all the dead will be resurrected, believers unto everlasting life and unbelievers unto everlasting condemnation (Daniel 12:2; John 5:28-29); that believers will be resurrected when Christ returns for His Church (I Thessalonians 4:17) and will reign with Him on earth for a thousand years (Revelation 20:6); that believers will live eternally with Him in heaven (Revelation 21:3); that unbelievers will be resurrected after the millennium to be judged at the Great White Throne and will suffer eternal torment in hell (Rev. 20:14-15).</p>
+                    <p>We believe that the presence of Jesus Christ by the Holy Spirit in the believer is for the expressed purpose of rendering God’s provision for a life of holiness operative and effectual in the life of the individual (I Corinthians 6:19-20); that the source of power and victory over sin resides in the resurrection life of Christ mediated to the Christian by the Holy Spirit (Hebrews 10:10; Ephesians 5:25-27; Galatians 2:20); that an attitude of absolute confidence in the liberating, uplifting, and empowering control of the Holy Spirit spells victory and a life of holiness for the Christian (John 16:13a; 14:16-17; II Corinthians 3:18).</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
+    
+
+<div class="container" style="color: white;">
+
+        
+
+        
+        <h5 class="fw-bold fst-italic">Psalm 18:1-3; 31-35; 46; 49</h5>
+        <p><strong>1</strong> I love You, O LORD, my strength.</p>
+        <p><strong>2</strong> The LORD is my rock, my fortress, and my deliverer. My God is my rock, in whom I take refuge, my shield, and the horn of my salvation, my stronghold.</p>
+        <p><strong>3</strong> I will call upon the LORD, who is worthy to be praised; so shall I be saved from my enemies.</p>
+        
+        <p><strong>31</strong> For who is God besides the LORD? And who is the Rock except our God?</p>
+        <p><strong>32</strong> It is God who arms me with strength and makes my way clear.</p>
+        <p><strong>33</strong> He makes my feet like those of a deer and stations me upon the heights.</p>
+        <p><strong>34</strong> He trains my hands for battle; my arms can bend a bow of bronze.</p>
+        <p><strong>35</strong> You have given me Your shield of salvation; Your right hand upholds me, and Your gentleness exalts me.</p>
+        
+        <p><strong>46</strong> The LORD lives, and blessed be my Rock! And may the God of my salvation be exalted—</p>
+        <p><strong>49</strong> Therefore I will praise You, O LORD, among the nations; I will sing praises to Your name.</p>
+        
+        <h5 class="fw-bold fst-italic mt-4">Habakkuk 3:17-19</h5>
+        <p><strong>17</strong> Though the fig tree does not bud and there are no grapes on the vines, though the olive crop fails and the fields produce no food, though there are no sheep in the pen and no cattle in the stalls,</p>
+        <p><strong>18</strong> Yet I will rejoice in the Lord, I will be joyful in God my Savior.</p>
+        <p><strong>19</strong> The Sovereign Lord is my strength; he makes my feet like the feet of a deer, He enables me to tread on the heights.</p>
+    </div>
+
+
+    <div class="content">
+        <div class="left">
+            <div class="box gospel">
+                <h3>📖 CENTERED ON THE GOSPEL</h3>
+                <p>In all things, we proclaim and live out the good news of what God has done and is doing in Christ.</p>
+            </div>
+            <div class="box mission">
+                <h3>🚀 MOBILIZED FOR MISSION</h3>
+                <p>We share the good news and pursue the advancement of God's Kingdom in our communities, our cities, and the nations.</p>
+            </div>
+        </div>
+
+        <div class="tree">
+          
+       
+
+        <div class="right">
+            <div class="box scripture">
+                <h3>📜 ROOTED IN SCRIPTURE</h3>
+                <p>We devote ourselves to understanding, obeying, and delighting in God's Word.</p>
+            </div>
+            <div class="box renewal">
+                <h3>🌿 CALLED TO RENEWAL</h3>
+                <p>We seek to cultivate Spirit-empowered restoration and transformation in our communities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Olivet University Footer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .footer h6 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #ccc;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer .social-icons i {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #fff;
+    }
+    .footer input.form-control {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="logo mb-2">
+          <img src="nbc.jpg" alt="Olivet University Logo" class="rounded-circle mb-2" width="80">
+        </div>
+        <address>
+          36401 Tripp Flats Rd.<br>
+          Anza, CA 92539<br>
+          Tel. 951.763.0500
+        </address>
+        <div class="social-icons mt-2">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="mt-2">&copy; 2025 Olivet University. All Rights Reserved.</div>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ABOUT</h6>
+        <a href="#">Welcome</a>
+        <a href="#">History</a>
+        <a href="#">Founder</a>
+        <a href="#">Mission</a>
+        <a href="#">Memberships</a>
+       
+       
+      </div>
+
+      <div class="col-md-2">
+        <h6>PASTORAL </h6>
+        <a href="derrydotosme.html">REV. DERRY DOTOSME </a>
+        <a href="#">Olivet's Core Learning Outcomes</a>
+        <a href="#">Academic Standards</a>
+        <a href="#">Research & Development</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>PROGRAM BY LOCATIONS</h6>
+        <a href="#">Riverside</a>
+        <a href="#">San Francisco</a>
+        <a href="#">St. Louis</a>
+        <a href="#">Washington D.C.</a>
+        <a href="#">Sanford</a>
+        <a href="#">Nashville</a>
+      </div>
+
+      <div class="col-md-2">
+        <h6>ADMISSION & AID</h6>
+        <a href="#">Undergraduate Programs</a>
+        <a href="#">Graduate Programs</a>
+        <a href="#">International Students</a>
+        <a href="#">Financial Information</a>
+        <a href="#">Continuing Education</a>
+        <a href="#">Consumer Information</a>
+      </div>
+
+     
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

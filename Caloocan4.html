@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - SJEST</title>
+    <link rel="icon" type="image/png" href="nbc.jpg"> <!-- Favicon added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-800 text-white text-center p-2 text-sm">
+        NORTH CALOOCAN BIBLE COLLEGE
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="nbc.jpg" alt="SJEST Logo" class="h-10">
+            <span class="font-bold text-lg">NORTH CALOOCAN BIBLE COLLEGE</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="Caloocan.html" class="hover:text-green-600">HOME</a></li>
+            <li><a href="Caloocan1.html" class="hover:text-green-600">ABOUT</a></li>
+            <li><a href="Caloocan3.html" class="text-green-600 font-semibold">MINISTRY</a></li>
+            <li><a href="Caloocan4.html" class="hover:text-green-600">COURSE</li>
+            <li><a href="Calooocan5.html" class="hover:text-green-600">LOCATION</a></li>
+            
+        </ul>
+        
+        <a href="Caloocan.html" class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
+            BACK TO NCBC
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <img src="nbc.jpg" alt="Menu" class="h-6">
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4">
+        <ul class="text-gray-700 space-y-4">
+            <li><a href="#" class="hover:text-green-600">HOME</a></li>
+            <li><a href="#" class="hover:text-green-600">ABOUT</a></li>
+            <li><a href="#" class="text-green-600 font-semibold">HISTORY</a></li>
+            <li><a href="#" class="hover:text-green-600">PROGRAMS</a></li>
+            <li><a href="#" class="hover:text-green-600">SUBJECT</a></li>
+            <li><a href="#" class="hover:text-green-600">LOCATION</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+<section class="text-center py-10 mt-16" style="background-color: rgb(144, 238, 144);">
+    <h1 class="text-3xl font-bold mt-4">NORTH CALOOCAN BIBLE COLLEGE COURSES</h1>
+    <p class="text-black mt-2" style="text-align: justify;">Explore our accredited programs in Theology and Ministry, designed to provide in-depth knowledge and practical skills for those called to serve in faith-based professions. Our programs blend rigorous academic instruction with hands-on ministry experiences, preparing students for leadership roles in churches, nonprofit organizations, and faith communities. With a focus on biblical studies, pastoral care, and ethical leadership, our accredited courses equip students with the theological foundation and practical tools necessary to make a positive impact in the world. Join us to grow in faith and service.</p>
+
+    <hr class="border-green-500 w-1/4 mx-auto mt-2">
+  </section>
+  
+   
+
+<!-- Course Selection Buttons -->
+<section class="text-center py-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="bat1">+ Bachelor of Arts in Theology</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="bat2">+ Bachelor of Arts in Christian Education</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="bat3">+ Bachelor of Theology in Biblical Studies</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="bat4">+ Bachelor of Pastoral Leadership</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="bat5">+ Bachelor of Christian Counselling</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="cert">+ Certificate Programs</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="mat1">+ Master of Divinity in Biblical Studies</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="mat2">+ Master in Biblical Counselling</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="mat3">+ Master in Pastoral Leadership</button>
+        <button class="tab-button bg-gray-800 px-6 py-2 rounded text-white font-semibold" data-tab="mat4">+ Master in Christian Education</button>
+    </div>
+</section>
+
+<!-- Course Content -->
+<section id="course-content" class="text-center py-6 px-6 max-w-4xl mx-auto hidden">
+    <h2 class="text-xl font-bold" id="course-title"></h2>
+    <p class="text-black-400 mt-2" id="course-description"></p>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".tab-button");
+        const content = document.getElementById("course-content");
+        const title = document.getElementById("course-title");
+        const description = document.getElementById("course-description");
+
+        const courseData = {
+            bat1: {
+                title: "Bachelor of Arts in Theology",
+                description: "A Bachelor of Arts in Theology is an undergraduate degree that explores religious beliefs, sacred texts, and theological traditions. It examines the history, philosophy, and ethical implications of faith, often focusing on Christianity, though some programs cover multiple religious traditions. Students engage in biblical studies, systematic theology, church history, and pastoral care, developing critical thinking and interpretive skills. Graduates may pursue careers in ministry, education, counseling, or non-profit work, while some continue to seminary or graduate studies. This degree fosters a deep understanding of spiritual and moral principles, preparing students for leadership roles in religious and community settings."
+            },
+            bat2: {
+                title: "Bachelor of Arts in Christian Education",
+                description: "A Bachelor of Arts in Christian Education equips students with the knowledge and skills to teach and lead in church, school, and ministry settings. This degree integrates biblical studies, theology, and educational principles, preparing graduates to develop faith-based curricula and mentor others in spiritual growth. Coursework includes Christian pedagogy, church leadership, discipleship, and pastoral counseling. Graduates often pursue careers as Christian educators, youth ministers, church administrators, or missionaries. Some continue to seminary or graduate studies in theology or education. This program fosters a strong foundation in faith, leadership, and teaching, enabling students to serve effectively in Christian communities.."
+            },
+            bat3: {
+                title: "Bachelor of Theology in Biblical Studies",
+                description: "A Bachelor of Theology in Biblical Studies is an undergraduate degree focused on an in-depth study of the Bible, its historical context, and theological significance. Students explore Old and New Testament scriptures, biblical languages, hermeneutics, and doctrinal theology. The program emphasizes critical analysis, interpretation, and application of biblical teachings in ministry and everyday life. Graduates are prepared for roles in pastoral ministry, teaching, missions, or further theological studies. This degree equips students with a strong foundation in scripture, fostering spiritual growth and leadership in church and community settings while deepening their understanding of Christian faith and biblical truths."
+            },
+            bat4: {
+                title: "Bachelor of Pastoral Leadership",
+                description: "A Bachelor of Pastoral Leadership prepares students for leadership roles in ministry, equipping them with biblical knowledge, leadership skills, and pastoral care training. The program focuses on theology, church administration, discipleship, preaching, and counseling, helping students develop a strong foundation for guiding congregations and communities. Coursework includes spiritual formation, leadership development, and practical ministry experience. Graduates often become pastors, ministry directors, church planters, or non-profit leaders. This degree fosters servant leadership, effective communication, and a heart for ministry, empowering students to lead with wisdom, integrity, and a deep commitment to faith in various church and community settings.."
+            },
+            bat5: {
+                title: "Bachelor of Christian Counselling",
+                description: "A Bachelor of Christian Counseling equips students with biblical knowledge and counseling skills to provide faith-based emotional and spiritual support. The program integrates psychology, theology, and pastoral care, focusing on topics such as Christian ethics, crisis intervention, family therapy, and mental health from a biblical perspective. Students learn to offer guidance rooted in scripture while addressing emotional and psychological challenges. Graduates can pursue roles in pastoral counseling, church ministry, non-profits, or further studies in counseling or theology. This degree prepares individuals to support and nurture others, combining professional counseling techniques with Christian principles to foster healing and growth."
+            },
+            cert: {
+                title: "Certificate Programs",
+                description: "Certificate Programs provide focused, short-term training in specific fields, enhancing professional skills and knowledge. These programs are ideal for individuals seeking career advancement, specialization, or personal growth without committing to a full degree. Certificates are available in various disciplines, including business, healthcare, technology, theology, and education. Courses are typically practical and industry-relevant, equipping students with hands-on experience. Many programs can be completed online or in person within a few months to a year. Graduates gain valuable credentials that improve job prospects, support career transitions, or serve as a foundation for further academic pursuits in their chosen field."
+            },
+            mat1: {
+                title: "Master of Divinity in Biblical Studies",
+                description: "A Master of Divinity in Biblical Studies is a graduate degree that provides an in-depth exploration of scripture, theology, and ministry leadership. This program emphasizes biblical interpretation, hermeneutics, Hebrew and Greek studies, and doctrinal theology, equipping students for pastoral, teaching, and missionary roles. Coursework includes Old and New Testament studies, preaching, ethics, and spiritual formation. Graduates often pursue careers in ministry, academia, or further doctoral studies. Designed for those seeking advanced biblical knowledge and leadership skills, this degree prepares individuals for effective service in church and community settings, fostering spiritual growth and a deep understanding of Christian faith."
+            },
+            mat2: {
+                title: "Master in Biblical Counselling",
+                description: "A Master in Biblical Counseling equips students with advanced counseling skills rooted in biblical principles to provide faith-based guidance and emotional support. The program integrates theology, psychology, and pastoral care, focusing on topics such as trauma counseling, marriage and family therapy, crisis intervention, and Christian ethics. Students learn to address emotional and spiritual struggles using scripture and counseling techniques. Graduates pursue careers in pastoral counseling, church ministry, Christian therapy, or further doctoral studies. This degree prepares individuals to counsel with wisdom and compassion, fostering healing and transformation while integrating biblical truth with professional counseling practices."
+            },
+            mat3: {
+                title: "Master in Pastoral Leadership",
+                description: "A Master in Pastoral Leadership prepares individuals for effective leadership in ministry by integrating biblical theology, leadership principles, and practical ministry skills. The program focuses on church administration, discipleship, preaching, pastoral care, and spiritual formation. Students develop strategic leadership abilities to guide congregations, mentor leaders, and foster community impact. Coursework includes organizational leadership, conflict resolution, and vision casting for ministry growth. Graduates pursue roles as pastors, ministry directors, church planters, or nonprofit leaders. This degree equips individuals with the knowledge, wisdom, and spiritual maturity to lead with integrity, inspire others, and effectively serve in diverse ministry settings."
+            },
+            mat4: {
+                title: "Master in Christian Education",
+                description: "A Master in Christian Education equips students with advanced knowledge in biblical teaching, curriculum development, and educational leadership within Christian settings. The program integrates theology, pedagogy, and ministry training, focusing on discipleship, faith formation, and effective teaching methods. Coursework includes Christian ethics, instructional design, leadership in education, and spiritual development. Graduates pursue careers as Christian educators, school administrators, curriculum developers, or church education directors. This degree prepares individuals to lead and teach with a strong biblical foundation, fostering spiritual growth and academic excellence in schools, churches, and ministry organizations while shaping the next generation of Christian leaders."
+            }
+        };
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                const selectedCourse = this.getAttribute("data-tab");
+                if (courseData[selectedCourse]) {
+                    title.innerHTML = courseData[selectedCourse].title;
+                    description.innerHTML = courseData[selectedCourse].description;
+                    content.classList.remove("hidden");
+                }
+
+                buttons.forEach(btn => btn.classList.remove("bg-gray-700"));
+                this.classList.add("bg-gray-700");
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+    <title>Feature Section</title>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center p-6">
+        <div class="flex flex-col items-center">
+            <div class="bg-indigo-900 text-white p-6 rounded-full">
+                <svg data-lucide="globe" class="w-10 h-10"></svg>
+            </div>
+            <h3 class="text-lg font-semibold mt-4">Accessible anywhere on any device in any country</h3>
+            <a href="#" class="text-indigo-600 mt-2">Read more</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="bg-indigo-900 text-white p-6 rounded-full">
+                <svg data-lucide="book-open" class="w-10 h-10"></svg>
+            </div>
+            <h3 class="text-lg font-semibold mt-4">Easy-to-follow series of courses</h3>
+            <a href="#" class="text-indigo-600 mt-2">Read more</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="bg-indigo-900 text-white p-6 rounded-full">
+                <svg data-lucide="clock" class="w-10 h-10"></svg>
+            </div>
+            <h3 class="text-lg font-semibold mt-4">Learn on your own schedule</h3>
+            <a href="#" class="text-indigo-600 mt-2">Read more</a>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="bg-indigo-900 text-white p-6 rounded-full">
+                <svg data-lucide="users" class="w-10 h-10"></svg>
+            </div>
+            <h3 class="text-lg font-semibold mt-4">A global body of students supporting one another</h3>
+            <a href="#" class="text-indigo-600 mt-2">Read more</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Special Characteristics</title>
+</head>
+<body class="bg-indigo-100 flex justify-center items-center min-h-screen">
+    <div class="max-w-6xl mx-auto p-8">
+        <h2 class="text-2xl font-bold text-indigo-900">Special Characteristics</h2>
+        <p class="text-gray-700 mt-2">These are the special characteristics which flavour the lesson material and ministry approach of the Online Bible College:</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-6">
+            <div>
+                <h3 class="text-lg font-semibold text-indigo-900">The Centrality of the Gospel</h3>
+                <p class="text-gray-700 mt-2">We believe that the Gospel of the Lord Jesus Christ must be central to all church teaching and activity. The Gospel is a "whole Gospel for the whole Christian life."</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-indigo-900">The Gifts of the Spirit</h3>
+                <p class="text-gray-700 mt-2">We believe in the empowering of the Holy Spirit for service and the present-day operation of the gifts of the Spirit, as described in 1 Corinthians 12:7-11.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-indigo-900">The Ministry of Every Believer</h3>
+                <p class="text-gray-700 mt-2">We believe that every believer, regardless of race, gender, or educational status, is called by God to participate in His glorious purpose.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-indigo-900">The Unity of the Body of Christ</h3>
+                <p class="text-gray-700 mt-2">We believe in the indivisible unity of the Body of Christ, established solely upon the foundation of the Gospel of Christ, as described in John 17:20-23 and Ephesians 4:13.</p>
+            </div>
+        </div>
+        <div class="flex justify-end mt-6">
+            <button class="bg-indigo-900 text-white px-6 py-2 rounded-lg">Tenets of Faith</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Missions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+
+    <div class="bg-white shadow-lg rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row overflow-hidden">
+        
+        <!-- Image Section -->
+        <div class="md:w-1/2">
+            <img src="bible4.jpg" alt="Group of people smiling" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Text Content -->
+        <div class="md:w-1/2 p-6">
+            <h2 class="text-2xl font-bold text-blue-900">
+                Could God Be Leading Your Church To Inspire People Toward Missions?
+            </h2>
+            <p class="text-gray-700 mt-4">
+                Yes! If you are willing to be led, your church can be a part of the story of redemption God is writing through global missions.
+            </p>
+            <p class="text-gray-700 mt-2">
+                Begin by praying as Matthew 9:38 instructs, and consider whether your church could be inspiring the next generation of missionaries and helping sustain people who are already serving.
+            </p>
+            <p class="text-gray-700 mt-2">
+                Join us at the Connect Event on our SIM USA Campus where potential workers and mission leaders can learn more about how we can partner together to fulfill God’s plans.
+            </p>
+
+            <!-- Button -->
+            <div class="mt-6">
+                <a href="#" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Learn More About Connect
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="relative bg-green-900 text-white text-center py-20">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h1 class="text-5xl font-bold">Vision 2025</h1>
+            <p class="mt-4 text-lg">Moving Our Vision Forward</p>
+            <button class="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">LEARN MORE</button>
+        </div>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <img src="bible10.jpg" alt="Why Give" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                <h2 class="text-2xl font-bold">Why Give</h2>
+                <p class="mt-2 text-center">Your support is transforming lives every day.</p>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <img src="bible11.jpg" alt="Where to Give" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                <h2 class="text-2xl font-bold">Where to Give</h2>
+                <p class="mt-2 text-center">Donate to a cause that is meaningful to you.</p>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <img src="bible21.jpg" alt="How to Give" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
+                <h2 class="text-2xl font-bold">How to Give</h2>
+                <p class="mt-2 text-center">There are many ways to make a donation to Concordia.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read, Listen, Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto text-center p-10">
+        <div class="grid grid-cols-3 gap-6 mb-10">
+            <div>
+                <i data-lucide="book-open" class="w-10 h-10 mx-auto text-blue-900"></i>
+                <h2 class="text-xl font-bold mt-3 text-blue-900">READ</h2>
+            </div>
+            <div>
+                <i data-lucide="headphones" class="w-10 h-10 mx-auto text-blue-900"></i>
+                <h2 class="text-xl font-bold mt-3 text-blue-900">LISTEN</h2>
+            </div>
+            <div>
+                <i data-lucide="graduation-cap" class="w-10 h-10 mx-auto text-orange-600"></i>
+                <h2 class="text-xl font-bold mt-3 text-orange-600">LEARN</h2>
+            </div>
+        </div>
+        <p class="text-2xl text-orange-600 font-semibold">Life is about Knowing God, Loving God, and Loving People. We learn to do this well by Learning the Bible.</p>
+        
+        <div class="mt-10 text-lg text-gray-700 max-w-3xl mx-auto">
+            <p>
+                And there was an Ethiopian, a eunuch, a court official of Candace, queen of the Ethiopians, who was in charge of all her treasure. He had come to Jerusalem to worship and was returning, seated in his chariot, and <strong>he was reading the prophet Isaiah</strong>.
+            </p>
+            <p class="mt-3">
+                So Philip ran to him and heard him reading Isaiah the prophet and asked, <strong>“Do you understand what you are reading?”</strong>
+            </p>
+            <p class="mt-3">
+                And he said, <strong>“How can I, unless someone guides me?”</strong>
+            </p>
+            <p class="mt-5 text-right text-gray-600 font-semibold">Acts 8:27-31 ESV</p>
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Options</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-indigo-900">Study Truth.</h1>
+        <h2 class="text-xl font-semibold text-yellow-600 mt-2">WHICH PATH IS RIGHT FOR YOU?</h2>
+        <p class="text-gray-600 mt-4">With nineteen unique degree options, including doctorates, master's degrees, and certificate programs, we have something for everyone.</p>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto mt-10 overflow-hidden">
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+            <div class="w-full flex justify-around items-center">
+                <div class="text-center">
+                    <div class="text-6xl">🛡️</div>
+                    <p class="mt-2 text-indigo-900 font-semibold">MA in Apologetics & Evangelism</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl">א</div>
+                    <p class="mt-2 text-indigo-900 font-semibold">MA in Bible Translation</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl">❤️</div>
+                    <p class="mt-2 text-indigo-900 font-semibold">MA in Chaplaincy & Ministry Care</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl">📝</div>
+                    <p class="mt-2 text-indigo-900 font-semibold">MA in Christian Education</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl">👤</div>
+                    <p class="mt-2 text-indigo-900 font-semibold">MA in Christian Leadership</p>
+                </div>
+            </div>
+        </div>
+        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-yellow-600 text-white p-2 rounded-full">❮</button>
+        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-yellow-600 text-white p-2 rounded-full">❯</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const carousel = document.getElementById("carousel");
+        const items = document.querySelectorAll("#carousel > div > div");
+        const itemWidth = items[0].clientWidth;
+        document.getElementById("next").addEventListener("click", () => {
+            if (index < items.length - 3) {
+                index++;
+                carousel.style.transform = `translateX(-${index * (itemWidth + 20)}px)`;
+            }
+        });
+        document.getElementById("prev").addEventListener("click", () => {
+            if (index > 0) {
+                index--;
+                carousel.style.transform = `translateX(-${index * (itemWidth + 20)}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-900 text-white">
+    <div class="container mx-auto px-6 py-12 text-center">
+        <h2 class="text-4xl font-bold">WHAT WE DO</h2>
+        <p class="mt-4 text-lg">Word of Life Bible Institute offers both freshman and sophomore programs that cultivate a Christ-centered worldview in three core areas: study, life, and ministry.</p>
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Study Section -->
+            <div class="text-center p-6 bg-blue-800 bg-opacity-50 rounded-lg">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-600 rounded-full">
+                        📖
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold">STUDY</h3>
+                <p class="mt-2">Not only will you take a verse-by-verse journey through Scripture, but you’ll learn how to discern and apply biblical truth in your own life.</p>
+                <a href="#" class="mt-4 inline-block px-6 py-2 border border-white rounded-lg font-bold">VIEW ACADEMICS</a>
+            </div>
+
+            <!-- Life Section -->
+            <div class="text-center p-6 bg-blue-800 bg-opacity-50 rounded-lg">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-600 rounded-full">
+                        ❤️
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold">LIFE</h3>
+                <p class="mt-2">From intentional discipleship to exciting community events, our unique campus culture sets us apart from the rest.</p>
+                <a href="#" class="mt-4 inline-block px-6 py-2 border border-white rounded-lg font-bold">DISCOVER STUDENT LIFE</a>
+            </div>
+
+            <!-- Ministry Section -->
+            <div class="text-center p-6 bg-blue-800 bg-opacity-50 rounded-lg">
+                <div class="flex justify-center mb-4">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-600 rounded-full">
+                        ⛪
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold">MINISTRY</h3>
+                <p class="mt-2">Get training and experience in practical ministry skills that you can bring with you beyond the Bible Institute.</p>
+                <a href="#" class="mt-4 inline-block px-6 py-2 border border-white rounded-lg font-bold">EXPLORE MINISTRY OPTIONS</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Campus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Fgfjq7c1I0XQaOsmOWZL79Rj9u86GhPl6w&s') center center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: #f4a261;
+      margin: 10px auto 20px;
+    }
+    .hero-button {
+      background-color: #f4a261;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+    }
+    .hero-button:hover {
+      background-color: #e98c48;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="hero-title">Our Campus</div>
+      <div class="underline"></div>
+      <p class="lead">
+        The first campus is currently being built with the core purpose to raise up revivalists to go into villages and preach the gospel.
+      </p>
+      <a href="#" class="hero-button">Learn More</a>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Music Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <section class="relative w-full h-screen bg-cover bg-center" style="background-image: url('nbc.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="max-w-4xl p-8 bg-white bg-opacity-80 rounded-lg shadow-lg text-center">
+                <h1 class="text-4xl font-bold text-gray-900">NORTH CALOOCAN BIBLE COLLEGE </h1>
+                <p class="mt-4 text-gray-800 leading-relaxed text-justify">
+                    North Caloocan Bible College (NCBC) is a faith-based institution committed to providing quality biblical education and ministerial training. Located in North Caloocan, Philippines, NCBC equips students with theological knowledge, leadership skills, and a strong spiritual foundation. The college offers various programs designed to prepare individuals for pastoral ministry, missionary work, and church leadership.
+                
+                    At NCBC, students receive in-depth instruction in biblical studies, theology, and Christian discipleship. The curriculum integrates academic learning with practical ministry experience, ensuring that graduates are well-prepared to serve in their respective callings. The faculty consists of dedicated pastors and scholars who guide students in deepening their faith and understanding of God’s Word.
+                
+                    Beyond academics, NCBC fosters a Christ-centered community where students can grow spiritually through worship, prayer, and fellowship. The institution emphasizes character development, servant leadership, and a heart for evangelism. Through outreach programs and hands-on ministry opportunities, students engage with local churches and communities, putting their faith into action.
+                
+                    North Caloocan Bible College remains committed to training the next generation of Christian leaders, empowering them to spread the gospel and make a meaningful impact both locally and globally. Its mission is to glorify God by raising up faithful servants dedicated to His work.
+                </p>
+                
+                <a href="#" class="mt-6 inline-block px-6 py-3 text-lg font-semibold text-white bg-yellow-500 rounded-lg shadow-lg hover:bg-yellow-600">
+                    Learn more about our program »
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Child High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+
+.w-16 {
+  width: 64px; /* Adjust based on your preferred size */
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the circle properly */
+  border: 2px solid #fff; /* Optional: Adds a white border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+
+</style>
+<body class="bg-gray-100">
+    <div class="grid md:grid-cols-2 min-h-screen">
+        <!-- Left Image Section -->
+        <div class="relative">
+            <img src="Holy2.jpg" alt="Holy Child High School" class="w-full h-full object-cover">
+        </div>
+        
+      <!-- Right Content Section -->
+<div class="bg-green-800 text-white p-10 flex flex-col justify-center">
+    <div class="text-center">
+        <!-- Logos Section -->
+        <div class="flex justify-center space-x-4 mb-4">
+            <img src="ag.png" alt="School Logo 1" class="w-16 h-16 rounded-full">
+            <img src="nbc.jpg" alt="School Logo 2" class="w-16 h-16 rounded-full">
+            <img src="logo.png" alt="School Logo 3" class="w-16 h-16 rounded-full">
+        </div>
+
+        
+
+        <!-- Description -->
+        <p class="text-lg leading-relaxed text-justify">
+            NORTH CALOOCAN BIBLE COLLEGE, JESUS CHRIST INTERNATIONAL ASSEMBLY, AND ASSEMBLY OF GOD envision a community of Christ-like individuals who embody faith, integrity, and excellence. Committed to lifelong learning, they strive to be globally competitive, service-driven, and responsible stewards of God’s blessings. With hearts full of compassion and love, they extend help to those in need, uphold moral and spiritual values, and actively contribute to social transformation.
+        
+            Through dedicated service, they inspire change, promote unity, and foster a culture of kindness and generosity. Their mission is to nurture individuals who lead with purpose, wisdom, and unwavering devotion to God and humanity. By equipping students with biblical knowledge, ethical principles, and practical skills, they prepare them to make meaningful contributions to society.
+            
+            They encourage continuous growth in faith, knowledge, and service, developing leaders who are passionate about evangelism, discipleship, and community outreach. With a deep sense of responsibility, they uphold the teachings of Christ, empowering individuals to create a lasting impact in their families, churches, and communities. Through education and ministry, they shape individuals who embody God’s love and truth, bringing hope and transformation to the world.
+        </p>
+        
+    </div>
+
+    <!-- Contact Info -->
+    <div class="mt-8 border-t border-white pt-6">
+        <h2 class="text-xl font-bold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 7.5v9a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 16.5v-9M12 3v18m-3-10.5h6m-6 3h6" />
+            </svg>
+            Contact Us
+        </h2>
+        
+        <p class="mt-2 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75-4.365-9.75-9.75-9.75zm0 0v9.75l5.25 3" />
+            </svg>
+            1474 JCSIA Worship Center, Quirino Highway, Bankers Village District I Zone 16, Tala, Caloocan, 1426
+        </p>
+        
+        <p class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            Contact No: +6327091403
+        </p>
+        
+        <p class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5M3.75 19.5h16.5m-16.5 0v-15m16.5 15v-15m-16.5 0l8.25 6.75m8.25-6.75L12 11.25" />
+            </svg>
+            Email: onejcsia@gmail.com
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <p class="text-sm text-gray-300 mt-6">&copy; 2025 | NORTH CALOOCAN BIBLE COLLEGE  | All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
